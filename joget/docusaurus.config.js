@@ -12,14 +12,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://writechoiceorg.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/joget-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'joget', // Usually your GitHub org/user name.
+  organizationName: 'writechoiceorg', // Usually your GitHub org/user name.
   projectName: 'joget-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -40,13 +40,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -77,16 +70,17 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: 'TesteDropdown',
+            items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
+            // dropdownActiveClassDisabled: false,
+          },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -103,14 +97,6 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
