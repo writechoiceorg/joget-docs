@@ -28,6 +28,7 @@
         "no-console": "warn", // Warn about using console methods
         "no-alert": "error", // Disallow using 'alert'
         "no-eval": "error", // Disallow using 'eval'
-        "object-curly-spacing": ["error", "always"]
+        "object-curly-spacing": ["error", "always"],
+        "react/prop-types": "off"
       }
 }

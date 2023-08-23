@@ -1,0 +1,71 @@
+.container {
+  margin-left: 110px;
+}
+
+.container h1 {
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 65.1px */
+  margin-bottom: 40px;
+}
+
+.container p {
+  max-width: 462px;
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  margin-bottom: 40px;
+}
+
+.hero {
+  height: 606px;
+}
+
+.sectionContainer {
+  margin: 90px 110px;
+}
+
+.sectionTitle1 {
+  color: #008D65;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 65.1px */
+  margin: 0;
+}
+
+.sectionTitle2 {
+  color: #4F4F4F;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+
+.sectionContainer .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionCard .cardTitle {
+  color: #383B3A;
+}
+
+.sectionCard p {
+  max-width: 85%;
+}
+
+.breakLine {
+  border: 0.5px solid #4F4F4F;
+  height: 0.5px;
+  margin: 60px;
+}
