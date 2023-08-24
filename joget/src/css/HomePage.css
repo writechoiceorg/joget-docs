@@ -1,0 +1,89 @@
+.container {
+  margin: 0 110px;
+}
+
+.container h1 {
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 65.1px */
+  margin-bottom: 40px;
+}
+
+.container p {
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  margin-bottom: 40px;
+  max-width: 462px;
+}
+
+.hero {
+  height: 606px;
+}
+
+.sectionContainer {
+  margin: 90px 110px;
+}
+
+.sectionTitle1 {
+  color: #008D65;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 65.1px */
+  margin: 0;
+}
+
+.sectionTitle2 {
+  color: #4F4F4F;
+  font-family: var(--main-font);
+  font-size: 65.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+
+.sectionContainer .cards2 {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 0 0;
+}
+
+.sectionContainer .cards3 {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 0 0;
+}
+
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionCard .cardTitle {
+  color: #383B3A;
+}
+
+.sectionCard p {
+  max-width: 85%;
+}
+
+.breakLine {
+  border: 1px solid #4F4F4F;
+  border-bottom: transparent;
+  height: 0.5px;
+  margin: 60px;
+}

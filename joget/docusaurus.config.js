@@ -66,19 +66,26 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/joget.jpg',
+      image: 'img/joget.svg',
       navbar: {
-        title: 'Joget',
+        title: '',
         logo: {
           alt: 'Joget Logo',
-          src: 'img/logo.svg',
+          src: 'img/joget.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'docs',
             position: 'left',
-            label: 'Joget Docs',
+            label: 'Tutorial',
+          },
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: 'Dropdown Menu',
+            items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
+            // dropdownActiveClassDisabled: false,
           },
 
           // { to: '/blog', label: 'Blog', position: 'left' },
@@ -90,7 +97,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         // links: [
         //   {
         //     title: 'Docs',
@@ -133,11 +140,15 @@ const config = {
         // },
         // ],
         copyright: `Copyright © ${new Date().getFullYear()} Joget Docs. Built with Docusaurus.`,
-
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
