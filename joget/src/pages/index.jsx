@@ -41,6 +41,7 @@ export default function Home() {
                 title1={content.title1} 
                 title2={content.title2} 
                 cards={cardContent[`section${idx + 1}`]}
+                className={`cards${cardContent[`section${idx + 1}`].length}`}
               />
               { idx < sectionContent.length - 1 && <div className='breakLine'/>}
             </>

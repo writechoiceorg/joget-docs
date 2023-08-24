@@ -1,5 +1,5 @@
 .container {
-  margin-left: 110px;
+  margin: 0 110px;
 }
 
 .container h1 {
@@ -13,7 +13,6 @@
 }
 
 .container p {
-  max-width: 462px;
   color: #FFF;
   font-family: var(--main-font);
   font-size: 24px;
@@ -21,6 +20,7 @@
   font-weight: 600;
   line-height: 100%; /* 24px */
   margin-bottom: 40px;
+  max-width: 462px;
 }
 
 .hero {
@@ -51,8 +51,25 @@
   margin-bottom: 50px;
 }
 
-.sectionContainer .cards {
+.sectionContainer .cards2 {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 0 0;
+}
+
+.sectionContainer .cards3 {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 0 0;
+}
+
+.sectionCard {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -65,7 +82,8 @@
 }
 
 .breakLine {
-  border: 0.5px solid #4F4F4F;
+  border: 1px solid #4F4F4F;
+  border-bottom: transparent;
   height: 0.5px;
   margin: 60px;
 }

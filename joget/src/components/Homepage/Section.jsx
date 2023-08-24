@@ -12,14 +12,14 @@ function Card({ card }) {
 }
 
 
-export default function HomepageSection({ title1, title2, cards }) {
+export default function HomepageSection({ title1, title2, cards, className }) {
   return (
     <div className='sectionContainer'>
       <div>
         <h1 className='sectionTitle1'>{title1}</h1>
         <h1 className='sectionTitle2'>{title2}</h1>
       </div>
-      <div className='cards'>
+      <div className={className}>
         {
           cards.map((c, idx) => (
             <Card key={idx} card={c}/>

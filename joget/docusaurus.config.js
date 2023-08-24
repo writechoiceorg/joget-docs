@@ -73,7 +73,7 @@ const config = {
           {
             type: 'dropdown',
             position: 'left',
-            label: 'TesteDropdown',
+            label: 'Dropdown Menu',
             items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
             // dropdownActiveClassDisabled: false,
           },
@@ -104,10 +104,6 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
@@ -119,6 +115,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
