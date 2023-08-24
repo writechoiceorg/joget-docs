@@ -46,23 +46,6 @@ export default function Home() {
             </>
           ))
         }
-        {/* <HomepageSection 
-          title1={'Low Code Application'} 
-          title2={'Guides'} 
-          cards={cardContent.section1}
-        />
-        <hr />
-        <HomepageSection 
-          title1={'Developers'} 
-          title2={'Documentation'} 
-          cards={cardContent.section2}
-        />
-        <hr />
-        <HomepageSection 
-          title1={'Developers'} 
-          title2={'Documentation'} 
-          cards={cardContent.section3}
-        /> */}
       </main>
     </Layout>
   );
