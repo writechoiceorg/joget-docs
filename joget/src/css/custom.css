@@ -38,3 +38,13 @@
 .navbar__items .navbar__link, .navbar__items--right {
   color: white;
 }
+
+.installGuideVideoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.installGuideVideo {
+  max-width: 850px;
+  margin: auto;
+}
