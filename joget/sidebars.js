@@ -22,18 +22,20 @@ const sidebars = {
     },
     {
       type: 'html',
-      value: "<span class='sidebar-title'>Getting started</span>",
+      value: '<span class=\'sidebar-title\'>Getting started</span>',
       defaultStyle: true,
     },
     {
       type: 'category',
-      label: "Platform Overview",
+      label: 'Platform Overview',
       items: [
         'getting-started/platform-overview/app-center',
         'getting-started/platform-overview/uis-forms-lists-process',
+        'getting-started/platform-overview/administrator-bar',
+        'getting-started/platform-overview/app-generator',
       ],
     },
   ],
-}
+};
 
 module.exports = sidebars;
