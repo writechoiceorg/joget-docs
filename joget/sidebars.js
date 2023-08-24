@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Creating a sidebar enables you to:
   - create an ordered group of docs
@@ -33,6 +34,13 @@ const sidebars = {
         'getting-started/platform-overview/uis-forms-lists-process',
         'getting-started/platform-overview/administrator-bar',
         'getting-started/platform-overview/app-generator',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Install Guides',
+      items: [
+        'getting-started/install-guides/installing-guide',
       ],
     },
   ],
