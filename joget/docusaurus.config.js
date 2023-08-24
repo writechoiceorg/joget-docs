@@ -12,14 +12,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
+
   url: 'https://joget-docs.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/joget-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'joget', // Usually your GitHub org/user name.
+  organizationName: 'writechoiceorg', // Usually your GitHub org/user name.
   projectName: 'joget-docs', // Usually your repo name.
   trailingSlash: false,
 
@@ -46,6 +47,7 @@ const config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -78,6 +80,7 @@ const config = {
             position: 'left',
             label: 'Joget Docs',
           },
+
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -130,6 +133,7 @@ const config = {
         // },
         // ],
         copyright: `Copyright © ${new Date().getFullYear()} Joget Docs. Built with Docusaurus.`,
+
       },
       prism: {
         theme: lightCodeTheme,
