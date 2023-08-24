@@ -28,19 +28,19 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Install Guides',
+      items: [
+        'getting-started/install-guides/installing-guide',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Platform Overview',
       items: [
         'getting-started/platform-overview/app-center',
         'getting-started/platform-overview/uis-forms-lists-process',
         'getting-started/platform-overview/administrator-bar',
         'getting-started/platform-overview/app-generator',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Install Guides',
-      items: [
-        'getting-started/install-guides/installing-guide',
       ],
     },
   ],
