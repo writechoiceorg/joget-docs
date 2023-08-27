@@ -27,11 +27,12 @@ const sidebars = {
       defaultStyle: true,
     },
     {
-      type: 'category',
+      type: 'doc',
       label: 'Install Guides',
-      items: [
-        'getting-started/install-guides/installing-guide',
-      ],
+      id:'getting-started/installing-guide',
+      // items: [
+      //   'getting-started/install-guides/installing-guide',
+      // ],
     },
     {
       type: 'category',
