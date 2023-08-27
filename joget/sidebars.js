@@ -44,6 +44,21 @@ const sidebars = {
         'getting-started/platform-overview/app-generator',
       ],
     },
+    {
+      type: 'category',
+      label: 'Create an app',
+      link: {
+        type: 'doc',
+        id: 'getting-started/create-an-app/create-an-app',
+      },
+      items: [
+        'getting-started/create-an-app/design-new-app',
+        'getting-started/create-an-app/design-a-form',
+        'getting-started/create-an-app/design-a-list',
+        'getting-started/create-an-app/design-a-ui',
+        'getting-started/create-an-app/design-a-process',
+      ],
+    },
   ],
 };
 

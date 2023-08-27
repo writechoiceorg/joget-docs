@@ -39,6 +39,33 @@
   color: white;
 }
 
+/*-------------------------------- Tables configuration ------------------------------  */
+
+table thead th {
+  background-color: #DDD7E9 ;
+  border: none ; 
+  text-align: left;
+}
+
+table tr td {
+  background-color: #FFFFFF ;
+  border: none ; 
+}
+
+table thead, table tbody  {
+  border: 1px solid #DDD7E9 ;
+}
+
+table thead tr {
+  border: 0 !important;
+}
+
+/* table {
+  font-size: small;
+} */
+
+/*-------------------------------- Video configuration ------------------------------  */
+
 .installGuideVideoDiv {
   display: flex;
   align-items: center;
@@ -49,3 +76,4 @@
   margin: auto;
   width: 100%;
 }
+
