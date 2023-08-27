@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Creating a sidebar enables you to:
   - create an ordered group of docs
@@ -24,6 +25,14 @@ const sidebars = {
       type: 'html',
       value: '<span class=\'sidebar-title\'>Getting started</span>',
       defaultStyle: true,
+    },
+    {
+      type: 'doc',
+      label: 'Install Guides',
+      id:'getting-started/installing-guide',
+      // items: [
+      //   'getting-started/install-guides/installing-guide',
+      // ],
     },
     {
       type: 'category',
