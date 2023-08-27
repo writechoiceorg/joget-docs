@@ -63,3 +63,17 @@ table thead tr {
 /* table {
   font-size: small;
 } */
+
+/*-------------------------------- Video configuration ------------------------------  */
+
+.installGuideVideoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.installGuideVideo {
+  max-width: 850px;
+  margin: auto;
+  width: 100%;
+}
+
