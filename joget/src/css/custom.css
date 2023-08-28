@@ -39,6 +39,10 @@
   color: white;
 }
 
+.navbar--fixed-top {
+  padding-left: 110px;
+}
+
 /*-------------------------------- Tables configuration ------------------------------  */
 
 table thead th {
