@@ -25,7 +25,10 @@
 
 .hero {
   height: 606px;
-  /* background-image: url('./joget/static/img/HomeBackgroundWidescreen.png'); */
+  background-image: url('https://raw.githubusercontent.com/writechoiceorg/joget-docs/main/joget/static/img/HomeBackgroundWidescreen.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .sectionContainer {
@@ -87,4 +90,10 @@
   border-bottom: transparent;
   height: 0.5px;
   margin: 60px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('https://raw.githubusercontent.com/writechoiceorg/joget-docs/main/joget/static/img/HomeBackgroundSmartPhone.png');
+  }
 }
