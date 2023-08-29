@@ -11,7 +11,7 @@ export default function Image({ imgURL, wSize, alt }) {
           width: wSize,
           margin: '0 0 var(--ifm-paragraph-margin-bottom)',
           borderRadius: '14px', 
-          boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.15)', 
+          boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.2)', 
         }}
       />
     </div>

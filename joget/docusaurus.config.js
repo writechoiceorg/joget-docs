@@ -73,7 +73,7 @@ const config = {
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
-          light: 'rgb(255, 255, 255)',
+          light: 'rgb(255, 255, 255,0.9)',
           dark: 'rgb(50, 50, 50)',
         },
         config: {
