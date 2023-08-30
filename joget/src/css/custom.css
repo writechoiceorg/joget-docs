@@ -41,10 +41,20 @@
 
 /*-------------------------------- Tables configuration ------------------------------  */
 
+table {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
 table thead th {
   background-color: #DDD7E9 ;
   border: none ; 
   text-align: left;
+}
+
+table tr {
+  width: 100%;
 }
 
 table tr td {
@@ -60,9 +70,9 @@ table thead tr {
   border: 0 !important;
 }
 
-/* table {
+table {
   font-size: small;
-} */
+}
 
 /*-------------------------------- Video configuration ------------------------------  */
 
