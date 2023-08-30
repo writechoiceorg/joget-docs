@@ -1,5 +1,6 @@
 .header_container {
-  margin: 0 110px;
+  margin: 0 175px;
+  padding: 0;
 }
 
 .header_container h1 {
@@ -24,19 +25,24 @@
 }
 
 .hero {
-  height: 606px;
+  height: 470px;
+  background-image: url('https://raw.githubusercontent.com/writechoiceorg/joget-docs/main/joget/static/img/HomeBackgroundWidescreen.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0 !important;
 }
 
 .sectionContainer {
-  margin: 90px 110px;
+  margin: 80px 175px;
 }
 
 .sectionTitle1 {
   color: #008D65;
   font-family: var(--main-font);
-  font-size: 65.1px;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%; /* 65.1px */
   margin: 0;
 }
@@ -44,9 +50,9 @@
 .sectionTitle2 {
   color: #4F4F4F;
   font-family: var(--main-font);
-  font-size: 65.1px;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   margin-bottom: 50px;
 }
@@ -55,7 +61,7 @@
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 0 0 0;
 }
 
@@ -71,19 +77,128 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 385.08px;
 }
 
 .sectionCard .cardTitle {
   color: #383B3A;
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 .sectionCard p {
   max-width: 85%;
+  margin: 0;
 }
 
 .breakLine {
   border: 1px solid #4F4F4F;
   border-bottom: transparent;
   height: 0.5px;
-  margin: 60px;
+  margin: 0 175px;
+}
+
+@media (max-width: 1440px) {
+  .header_container {
+    margin: 0 151px;
+  }
+
+  .navbar--fixed-top {
+    padding-left: 151px;
+  }
+
+  .sectionContainer {
+    margin: 80px 151px;;
+  }
+
+  .breakLine {
+    margin: 0 151px;
+  }
+
+  .sectionCard {
+    width: 385.08px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .header_container {
+    margin: 0 69px;
+  }
+
+  .navbar--fixed-top {
+    padding-left: 69px;
+  }
+
+  .sectionContainer {
+    margin: 80px 69px;;
+  }
+
+  .breakLine {
+    margin: 0 69px;
+  }
+
+  .sectionCard {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header_container {
+    margin: 0 62px;
+  }
+
+  .navbar--fixed-top {
+    padding-left: 62px;
+  }
+
+  .sectionContainer {
+    margin: 80px 62px;;
+  }
+
+  .breakLine {
+    margin: 0 62px;
+  }
+
+  .sectionCard {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_container {
+    margin: 0 40px;
+  }
+
+  .navbar--fixed-top {
+    padding-left: 40px;
+  }
+
+  .sectionContainer {
+    margin: 80px 40px;;
+  }
+
+  .breakLine {
+    margin: 0 40px;
+  }
+
+  .sectionContainer .cards2, .sectionContainer .cards3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionCard {
+    margin-bottom: 70px;
+  }
+
+  .navbar__toggle {
+    left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('https://raw.githubusercontent.com/writechoiceorg/joget-docs/main/joget/static/img/HomeBackgroundSmartPhone.png');
+  }
 }

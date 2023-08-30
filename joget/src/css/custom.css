@@ -39,6 +39,19 @@
   color: white;
 }
 
+.navbar--fixed-top {
+  padding-left: 175px;
+}
+
+.navbar__toggle {
+  position: absolute;
+  left: 15px;
+}
+
+.navbar__toggle svg {
+  color: white;
+}
+
 /*-------------------------------- Tables configuration ------------------------------  */
 
 table thead th {

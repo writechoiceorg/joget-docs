@@ -24,6 +24,7 @@
   padding: 12px 20px;
   background-color: #166559;
   transition: all 0.5s ease;
+  margin-top: 35px;
 }
 
 .headerBtn:hover, .sectionBtn:hover {
