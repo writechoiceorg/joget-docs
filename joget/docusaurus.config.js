@@ -80,13 +80,13 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {
-            type: 'dropdown',
-            position: 'left',
-            label: 'Dropdown Menu',
-            items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
-            // dropdownActiveClassDisabled: false,
-          },
+          // {
+          //   type: 'dropdown',
+          //   position: 'left',
+          //   label: 'Dropdown Menu',
+          //   items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
+          //   // dropdownActiveClassDisabled: false,
+          // },
 
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {
