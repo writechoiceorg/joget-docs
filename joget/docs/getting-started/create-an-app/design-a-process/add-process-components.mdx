@@ -1,0 +1,46 @@
+---
+id: add-process-components
+title: Add Process Components
+sidebar_position: 2
+slug: /getting-started/create-an-app/design-a-process/add-process-components
+description: temp
+tags: ['process']
+---
+
+import Images from '@site/src/components/images/Images';
+
+Now that you are familiar with the Process builder interface, we can structure the Travel Request process.
+
+The Travel Request process is composed by two **Participants**. One refers to all user who will register the travel request. The second participant relates to the user who will approve or deny the request. After the approval or deny, the system will automaticaly send an email informing the decision regarding the travel request.
+
+To create this process you will follow the steps below. Be sure to have finished all previous steps before continue.
+
+- **Step 1**: Add an **Activity** to the **Register** participant and connect the **Start** to it. Change the new activity label to **Submit Request**.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-1.png"
+  wSize="75%"
+/>
+
+- **Step 2**: Move a new **Activity** to the **Approver** participant and connect the **Submit Request** to it. Change its label to **Appove Request**.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-2.png"
+  wSize="75%"
+/>
+
+- **Step 3**: Integrate a route to the **Approver** participant and connect the **Approve Request** to it. The route will evaluate if the request status is approved and define the next process step.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-3.png"
+  wSize="75%"
+/>
+
+- **Step 4**: Add two new toll to the **Approver** participant and connect the route to them. Rename them as **Send Approved Email** and **Send Rejected Email**. Add and then connect each tool component to an end component.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-4.png"
+  wSize="75%"
+/>
+
+At this point with have the process structure. However, we still need to configure each step. At this point we will use associate components with forms, for example, ad define functioning rules. Access t

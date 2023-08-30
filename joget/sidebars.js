@@ -56,7 +56,18 @@ const sidebars = {
         'getting-started/create-an-app/design-a-form',
         'getting-started/create-an-app/design-a-list',
         'getting-started/create-an-app/design-a-ui',
-        'getting-started/create-an-app/design-a-process',
+        {
+          type: 'category',
+          label: 'Design a process',
+          link: {
+            type: 'doc',
+            id: 'getting-started/create-an-app/design-a-process/design-a-process',
+          },
+          items: [
+            'getting-started/create-an-app/design-a-process/process-builder',
+            'getting-started/create-an-app/design-a-process/add-process-components',
+          ],
+        },
       ],
     },
   ],
