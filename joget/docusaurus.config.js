@@ -7,8 +7,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
+  ],
+
   title: 'Joget',
-  tagline: 'Dinosaurs are cool!',
+  tagline: 'Joget Documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -66,6 +70,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255,0.9)',
+          dark: 'rgb(50, 50, 50)',
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        },
+      },
       image: 'img/joget.svg',
       navbar: {
         title: '',

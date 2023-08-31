@@ -1,20 +1,21 @@
 .videoIframe {
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .videoResponsive {
-  overflow: hidden;
+  margin-top: 50px;
+  /* overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: 0; */
 }
 
 .videoResponsive iframe {
-  left: 0;
+  /* left: 0;
   top: 0;
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: 15px;
+  border-radius: 15px; */
 
 }
