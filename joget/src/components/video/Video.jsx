@@ -23,8 +23,18 @@ import React from 'react';
 // import PropTypes from "prop-types";
 
 const Video = ({ url }) => (
-  <div className={styles.videoResponsive}>
+  <div 
+    style={{
+      display: 'flex',
+      marginBottom: 'var(--ifm-leading)',
+    }}
+  >
     <iframe
+      style={{
+        margin: 'auto',
+        borderRadius: '14px', 
+        boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.2)', 
+      }}
       width="75%"
       height="315"
       src={`${url}`}

@@ -28,14 +28,28 @@ const sidebars = {
       defaultStyle: true,
       className: 'sidebar_title',
     },
+    // {
+    //   type: 'doc',
+    //   label: 'Install Guides',
+    //   id:'getting-started/installing-guide',
+    //   className: 'sidebar_first_options install_guides',
+    //   // items: [
+    //   //   'getting-started/install-guides/installing-guide',
+    //   // ],
+    // },
     {
-      type: 'doc',
+      type: 'category',
       label: 'Install Guides',
-      id:'getting-started/installing-guide',
       className: 'sidebar_first_options install_guides',
-      // items: [
-      //   'getting-started/install-guides/installing-guide',
-      // ],
+      link: {
+        type: 'doc',
+        id: 'getting-started/installing-guides/installing-guides',
+      },
+      items: [
+        'getting-started/installing-guides/joget-dx-on-demand',
+        'getting-started/installing-guides/joget-google-apps',
+        'getting-started/installing-guides/installing-guide',
+      ],
     },
     {
       type: 'category',
@@ -61,7 +75,19 @@ const sidebars = {
         'getting-started/create-an-app/design-a-form',
         'getting-started/create-an-app/design-a-list',
         'getting-started/create-an-app/design-a-ui',
-        'getting-started/create-an-app/design-a-process',
+        {
+          type: 'category',
+          label: 'Design a process',
+          link: {
+            type: 'doc',
+            id: 'getting-started/create-an-app/design-a-process/design-a-process',
+          },
+          items: [
+            'getting-started/create-an-app/design-a-process/process-builder',
+            'getting-started/create-an-app/design-a-process/add-process-components',
+            'getting-started/create-an-app/design-a-process/configure-components',
+          ],
+        },
       ],
     },
   ],

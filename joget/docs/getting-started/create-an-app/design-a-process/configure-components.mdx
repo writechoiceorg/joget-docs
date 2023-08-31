@@ -1,0 +1,35 @@
+---
+id: configure-components
+title: Configure Components
+sidebar_position: 2
+slug: /getting-started/create-an-app/design-a-process/configure-components
+description: temp
+tags: ['process']
+---
+
+import Images from '@site/src/components/images/Images';
+
+After defining the process structure, it's time to map each component. The mapping process refers to connecting a process component to a form, list, user group, etc. All components added to the process need to be configured. Otherwise, the process will not work.
+
+## Mapping participants to users
+
+Each existing participant needs to be associated with one user type.
+
+- **Step 1**: Click on any Participant and select **Configure Mapping** on the right panel.
+- **Step 2**: Select the user type. Then, click **Apply Changes**.
+
+## Mapping Activities to forms
+
+Activities are related to actions users need to perform. Therefore, when you add a new activity to the process, you need to define which action it will associate with.
+
+- **Step 1**: Select the activity. For this example, select the Submit Request.
+- **Step 2**: On the right panel, select Mapping.
+- **Step 3**: For **Type**, choose **Form**, and then select the **Travel Request Form**. Then, click **Apply Changes**.
+
+## Mapping Tools to Plugins
+
+Tools execute predefined actions automatically when a condition is triggered. In this case, tools automatically notify the requester about the travel approval or denials. To make the tool perform the action, we need to map it to a plugin, in this case, the **Email** plugin.
+
+- **Step 1**: Select the desired tool within the process.
+- **Step 2**: On the right panel, select **Mapping** and for the **Tools**, choose **Email**.
+- **Step 3**: Configure the action. In this case, we would add all information for the communication Email. Then, click **Apply Changes**.
