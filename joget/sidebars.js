@@ -20,16 +20,19 @@ const sidebars = {
       type: 'doc',
       id: 'joget-docs',
       label: 'Joget Docs',
+      className: 'sidebar_joget_title',
     },
     {
       type: 'html',
       value: '<span class=\'sidebar-title\'>Getting started</span>',
       defaultStyle: true,
+      className: 'sidebar_title',
     },
     {
       type: 'doc',
       label: 'Install Guides',
       id:'getting-started/installing-guide',
+      className: 'sidebar_first_options install_guides',
       // items: [
       //   'getting-started/install-guides/installing-guide',
       // ],
@@ -37,6 +40,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Platform Overview',
+      className: 'sidebar_first_options platform_overview',
       items: [
         'getting-started/platform-overview/app-center',
         'getting-started/platform-overview/uis-forms-lists-process',
@@ -47,6 +51,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Create an app',
+      className: 'sidebar_first_options create_an_app',
       link: {
         type: 'doc',
         id: 'getting-started/create-an-app/create-an-app',

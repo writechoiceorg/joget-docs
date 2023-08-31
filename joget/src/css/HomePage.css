@@ -101,6 +101,10 @@
   margin: 0 175px;
 }
 
+.navbar__item {
+  margin-left: 5%;
+}
+
 @media (max-width: 1440px) {
   .header_container {
     margin: 0 151px;

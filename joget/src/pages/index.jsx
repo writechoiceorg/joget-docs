@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 
 // import styles from './index.module.css';
 import '../css/HomePage.css';
+import '../css/sidebar.css';
 import HomepageHeader from '../components/Homepage/Header';
 import HomepageSection from '../components/Homepage/Section';
 
