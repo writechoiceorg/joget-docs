@@ -17,16 +17,16 @@
 const sidebars = {
   docs: [
     {
-      type: 'doc',
-      id: 'joget-docs',
-      label: 'Joget Docs',
-      className: 'sidebar_joget_title',
-    },
-    {
       type: 'html',
       value: '<span class=\'sidebar-title\'>Getting started</span>',
       defaultStyle: true,
       className: 'sidebar_title',
+    },
+    {
+      type: 'doc',
+      id: 'joget-docs',
+      label: 'Joget Docs',
+      className: 'sidebar_first_options joget_docs',
     },
     // {
     //   type: 'doc',
