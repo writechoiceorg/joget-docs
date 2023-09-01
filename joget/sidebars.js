@@ -48,7 +48,7 @@ const sidebars = {
       items: [
         'getting-started/installing-guides/joget-dx-on-demand',
         'getting-started/installing-guides/joget-google-apps',
-        'getting-started/installing-guides/installing-guide',
+        'getting-started/installing-guides/download-guide',
       ],
     },
     {
@@ -78,6 +78,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Design a process',
+          className: 'design_a_process',
           link: {
             type: 'doc',
             id: 'getting-started/create-an-app/design-a-process/design-a-process',
