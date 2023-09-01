@@ -17,26 +17,44 @@
 const sidebars = {
   docs: [
     {
-      type: 'doc',
-      id: 'joget-docs',
-      label: 'Joget Docs',
-    },
-    {
       type: 'html',
       value: '<span class=\'sidebar-title\'>Getting started</span>',
       defaultStyle: true,
+      className: 'sidebar_title',
     },
     {
       type: 'doc',
+      id: 'joget-docs',
+      label: 'Joget Docs',
+      className: 'sidebar_first_options joget_docs',
+    },
+    // {
+    //   type: 'doc',
+    //   label: 'Install Guides',
+    //   id:'getting-started/installing-guide',
+    //   className: 'sidebar_first_options install_guides',
+    //   // items: [
+    //   //   'getting-started/install-guides/installing-guide',
+    //   // ],
+    // },
+    {
+      type: 'category',
       label: 'Install Guides',
-      id:'getting-started/installing-guide',
-      // items: [
-      //   'getting-started/install-guides/installing-guide',
-      // ],
+      className: 'sidebar_first_options install_guides',
+      link: {
+        type: 'doc',
+        id: 'getting-started/installing-guides/installing-guides',
+      },
+      items: [
+        'getting-started/installing-guides/joget-dx-on-demand',
+        'getting-started/installing-guides/joget-google-apps',
+        'getting-started/installing-guides/download-guide',
+      ],
     },
     {
       type: 'category',
       label: 'Platform Overview',
+      className: 'sidebar_first_options platform_overview',
       link: {
         type: 'doc',
         id: 'getting-started/platform-overview/plataform-overview',
@@ -51,6 +69,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Create an app',
+      className: 'sidebar_first_options create_an_app',
       link: {
         type: 'doc',
         id: 'getting-started/create-an-app/create-an-app',
@@ -63,6 +82,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Design a process',
+          className: 'design_a_process',
           link: {
             type: 'doc',
             id: 'getting-started/create-an-app/design-a-process/design-a-process',

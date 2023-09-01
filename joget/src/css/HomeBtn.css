@@ -29,6 +29,8 @@
 
 .headerBtn:hover, .sectionBtn:hover {
   background: #383B3A;
+  text-decoration: none;
+  color: white;
 }
 
 .headerBtn h4, .sectionBtn h4 {
