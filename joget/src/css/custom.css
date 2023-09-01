@@ -4,6 +4,10 @@
  * work well for content-centric websites.
  */
 
+* {
+  font-family: Open Sans !important; /* All with OpenSans. */
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #0F5245;
