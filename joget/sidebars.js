@@ -67,6 +67,7 @@ const sidebars = {
             'getting-started/create-an-app/design-a-process/process-builder',
             'getting-started/create-an-app/design-a-process/add-process-components',
             'getting-started/create-an-app/design-a-process/configure-components',
+            'getting-started/create-an-app/design-a-process/integrate-process-into-ui',
           ],
         },
       ],
