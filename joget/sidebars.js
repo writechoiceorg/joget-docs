@@ -37,6 +37,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Platform Overview',
+      link: {
+        type: 'doc',
+        id: 'getting-started/platform-overview/plataform-overview',
+      },
       items: [
         'getting-started/platform-overview/app-center',
         'getting-started/platform-overview/uis-forms-lists-process',
