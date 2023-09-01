@@ -15,21 +15,69 @@ After defining the process structure, it's time to map each component. The mappi
 
 Each existing participant needs to be associated with one user type.
 
-- **Step 1**: Click on any Participant and select **Configure Mapping** on the right panel.
-- **Step 2**: Select the user type. Then, click **Apply Changes**.
+- **Step 1**: Click on a Participant. For this example, select the **Register** one.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-1.png"
+  wSize="75%"
+/>
+
+- **Step 2**: Select **Configure Mapping** on the right panel.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-2.png"
+  wSize="75%"
+/>
+
+- **Step 3**: Choose the group or specific users to be mapped to the Participant. For this case, the Participant is mapped to _Type_ **Departament**, where we selected the **Training and Consult** **Departament**. Click **Apply Changes** to finish mapping.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-3.png"
+  wSize="75%"
+/>
+
+:::info Restrict acess by mapping Participants
+When you map a Participant to a user group, only them will have access to the actions related to that portion of the process. In the above example, only users from the Training and Consult departament would have access to the **Submit Request** form.
+:::
 
 ## Mapping Activities to forms
 
 Activities are related to actions users need to perform. Therefore, when you add a new activity to the process, you need to define which action it will associate with.
 
-- **Step 1**: Select the activity. For this example, select the Submit Request.
-- **Step 2**: On the right panel, select Mapping.
-- **Step 3**: For **Type**, choose **Form**, and then select the **Travel Request Form**. Then, click **Apply Changes**.
+- **Step 1**: Select the activity. For this example, select the **Submit Request**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-1.png"
+  wSize="75%"
+/>
+
+- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**, and then select the **Travel Request Form**. Click **Apply Changes**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-2.png"
+  wSize="75%"
+/>
 
 ## Mapping Tools to Plugins
 
 Tools execute predefined actions automatically when a condition is triggered. In this case, tools automatically notify the requester about the travel approval or denials. To make the tool perform the action, we need to map it to a plugin, in this case, the **Email** plugin.
 
 - **Step 1**: Select the desired tool within the process.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-1.png"
+  wSize="75%"
+/>
+
 - **Step 2**: On the right panel, select **Mapping** and for the **Tools**, choose **Email**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-2.png"
+  wSize="75%"
+/>
+
 - **Step 3**: Configure the action. In this case, we would add all information for the communication Email. Then, click **Apply Changes**.
+
+:::info Each plugin have different requirements
+Each plugin will require different information to operate properlly.
+:::
