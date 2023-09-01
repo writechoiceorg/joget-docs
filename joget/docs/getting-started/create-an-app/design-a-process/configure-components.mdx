@@ -1,7 +1,7 @@
 ---
 id: configure-components
 title: Configure Components
-sidebar_position: 2
+sidebar_position: 3
 slug: /getting-started/create-an-app/design-a-process/configure-components
 description: temp
 tags: ['process']
@@ -15,21 +15,205 @@ After defining the process structure, it's time to map each component. The mappi
 
 Each existing participant needs to be associated with one user type.
 
-- **Step 1**: Click on any Participant and select **Configure Mapping** on the right panel.
-- **Step 2**: Select the user type. Then, click **Apply Changes**.
+- **Step 1**: Click on a Participant. For this example, select the **Register** one.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-1.png"
+  wSize="65%"
+/>
+
+- **Step 2**: Select **Configure Mapping** on the right panel.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-2.png"
+  wSize="65%"
+/>
+
+- **Step 3**: Choose the group or specific users to be mapped to the Participant. For this case, the Participant is mapped to _Type_ **Departament**, where we selected the **Training and Consult** **Departament**. Click **Apply Changes** to finish mapping.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-3.png"
+  wSize="65%"
+/>
+
+:::info Restrict access by mapping Participants
+When you map a Participant to a user group, only they will have access to the actions related to that portion of the process. In the above example, only the Training and Consult department users would have access to the **Submit Request** form.
+:::
 
 ## Mapping Activities to forms
 
-Activities are related to actions users need to perform. Therefore, when you add a new activity to the process, you need to define which action it will associate with.
+Activities are related to actions users need to perform. Therefore, when you add a new activity to the process, you need to define which action it will associate with. The Travel Request app has two activities in its process. They are described individually to make it easier for you to understand.
 
-- **Step 1**: Select the activity. For this example, select the Submit Request.
-- **Step 2**: On the right panel, select Mapping.
-- **Step 3**: For **Type**, choose **Form**, and then select the **Travel Request Form**. Then, click **Apply Changes**.
+### Submit Request
+
+The form related to the travel request was created in the previous steps. Consequently, you only need to map the activity to the request, as described in the steps below.
+
+- **Step 1**: Select the activity. For this example, select the **Submit Request**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-1.png"
+  wSize="65%"
+/>
+
+- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**, and then select the **Travel Request Form**. Click **Apply Changes**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-2.png"
+  wSize="65%"
+/>
+
+### Approve Request
+
+The approval form was not created on the previous steps. We will create the approval form from the Process Builder page to show the flexibility provided by Joget. Follow the steps below to map the Approve Request activity to the new form.
+
+- **Step 1**: Select the activity **Approve Request** activity.
+- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**. Instead of selecting a form, Click on **+** button to create the Travel Approval Form.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-1.png"
+  wSize="65%"
+/>
+
+- **Step 3**: Fill the form creation fields with the following information and then click **Save** to create the form.
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Value for this example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Form ID</td>
+      <td>A unique identifier.</td>
+      <td>travelApprovalForm</td>
+    </tr>
+    <tr>
+      <td>Form Name</td>
+      <td>A unique descriptive name.</td>
+      <td>Travel Approval Form</td>
+    </tr>
+    <tr>
+      <td>Table Name</td>
+      <td>The database table name to store the form data.</td>
+      <td>travel_requests</td>
+    </tr>
+  </tbody>
+</table>
+
+- **Step 4**: Select the **Travel Approval Form**. Then, to start building the form, click on **OPEN ITEN IN BUILDER**. You will be redirected to the Form Builder page.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-3.png"
+  wSize="65%"
+/>
+
+- **Step 5**: To start building the new form, first let's add a **Subform**. It will be used to present the request information. Drag and drop the subform into the form.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-4.png"
+  wSize="65%"
+/>
+
+- **Step 6**: Select the subform to configure it. Define its Label as **Request**, its ID as **request**, and choose **Travel Request Form** on the Form field. As a result, the subform will present the information provided when creating the request, enabling the decision maker to approve or deny the request. Click **Apply Change**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-5.png"
+  wSize="65%"
+/>
+
+- **Step 7**: Add a Radio button to the form, below the subform. The radio button will provide the approve and deny options.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-6.png"
+  wSize="65%"
+/>
+
+- **Step 8**: Click on the radio button to configure its properties. The necessary configurations are listed below:
+
+  - Define Label as **Approval**.
+  - Define ID as **approval**.
+  - Check the **Display Option Vertically** box.
+  - Under **Options** click on **+ Add** to add the Approved and Rejected options.
+    - For the first option, define its Value and Label as **Approved**.
+    - For the second option, define its Value and Label as **Rejected**.
+  - Click on **Advanced Options** and for the **Workflow Variable** enter **status**.
+  - Click **Apply Change**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-7.png"
+  wSize="65%"
+/>
+
+:::info Workflow Variables
+Workflow variables are used to determine operations in the process. By associating a workflow variable to the radio button, we ensure the variable will receive the selected value, which other components will use to determine the process behavior. For this example, the variable can receive the values Approved or Rejected, which will define whether the requester will receive approval for their travel request.
+:::
+
+- **Step 9**: You've built the new form, which should look like the image below. Click on **Save** in the top right corner. Then, return to the process builder tab.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-8.png"
+  wSize="65%"
+/>
+
+- **Step 10**: Click **Apply Change** on the process builder tab to finish the **Approve Request** activity.
+
+## Mapping Routes to Plugins
+
+Routes define the process flow when a process intersection exists. Routes determine the next step of a process based on workflow variables or other attributes. Follow the steps to configure the existing route in the Travel Request process.
+
+- **Step 1**: Select the route within the process. Then select **Mapping** on the right panel and for Plugin choose **Simple Rules**. Thus, we can define a rule to process the **status** workflow variable provided by the Approve Request.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-1.png"
+  wSize="65%"
+/>
+
+- **Step 2**: Define the rule to evaluate the workflow variable. Below you find all rule configurations and an image with the final configurations.
+
+  - Click **+ Add Rule** to access the rule configuration.
+  - In the IF rule, click **+ Add Condition**.
+  - Set the **Variable** field to **status** and set the **Value** field to **Approved**.
+  - In the THEN rule, click on **+ Add Action** and set **Type** to **Transition**.
+  - Set **Transition** to **transition5 (Send Approved Email)**, meaning that this transition will happen when **status** is **Approved**.
+  - In the ELSE THEN rule, set the **Type** to **Transition**.
+  - Set **Transition** to **transition6 (Send Rejected Email)**, meaning that this transition will happen when **status** is **Rejected**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-2.png"
+  wSize="55%"
+/>
+
+- **Step 3**: Click **Apply Change**.
 
 ## Mapping Tools to Plugins
 
 Tools execute predefined actions automatically when a condition is triggered. In this case, tools automatically notify the requester about the travel approval or denials. To make the tool perform the action, we need to map it to a plugin, in this case, the **Email** plugin.
 
 - **Step 1**: Select the desired tool within the process.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-1.png"
+  wSize="65%"
+/>
+
 - **Step 2**: On the right panel, select **Mapping** and for the **Tools**, choose **Email**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-2.png"
+  wSize="65%"
+/>
+
 - **Step 3**: Configure the action. In this case, we would add all information for the communication Email. Then, click **Apply Changes**.
+
+:::info Each plugin has different requirements
+Each plugin will require different information to operate properly.
+:::
+
+## Test the Process
+
+On the Process Builder page you can test the created process by running it. To run the process, use the **Run Process** button at the top right corner. When you run the
+
+Congratulations, you have mapped all components within the process. Now, you can [integrate the process into the UI](./integrate-process-into-ui).

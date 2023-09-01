@@ -55,6 +55,10 @@ const sidebars = {
       type: 'category',
       label: 'Platform Overview',
       className: 'sidebar_first_options platform_overview',
+      link: {
+        type: 'doc',
+        id: 'getting-started/platform-overview/plataform-overview',
+      },
       items: [
         'getting-started/platform-overview/app-center',
         'getting-started/platform-overview/uis-forms-lists-process',
@@ -87,6 +91,7 @@ const sidebars = {
             'getting-started/create-an-app/design-a-process/process-builder',
             'getting-started/create-an-app/design-a-process/add-process-components',
             'getting-started/create-an-app/design-a-process/configure-components',
+            'getting-started/create-an-app/design-a-process/integrate-process-into-ui',
           ],
         },
       ],
