@@ -11,28 +11,8 @@
   padding-right: 0;
 }
 
-.sidebar_joget_title {
-  display: flex;
-  border-radius: 5px;
-  /* background: #166559 !important; */
-  transition: all 0.5s ease;
-  padding-left: 10px;
-  font-weight: 600;
-}
-
-.sidebar_joget_title a {
-  color: white;
-  transition: all 0.5s ease;
-}
-
-.sidebar_joget_title:hover {
-  border-radius: 5px;
-  background: #383B3A !important;
-}
-
-.sidebar_joget_title a:hover {
-  text-decoration: none;
-  color: white;
+.menu__list {
+  margin: 0 !important;
 }
 
 .sidebar_title {
@@ -50,10 +30,6 @@
   display: flex;
 }
 
-/* .sidebar_first_options a:not(:first-child) {
-  padding-left: 30px;
-} */
-
 .sidebar_first_options ul li {
   padding-left: 32px;
 }
@@ -67,14 +43,28 @@
 }
 
 .theme-doc-sidebar-item-category-level-1 a {
-  padding-left: 8px;
+  padding-left: 14px;
 }
+
+.menu__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600;
+}
+
+.theme-doc-sidebar-item-category, .theme-doc-sidebar-item-link {
+  margin:  16px 0 !important;
+}
+
+.theme-doc-sidebar-menu {
+  margin-top: 39px !important;
+}
+
 
 /* ------------------------ SVGs Icons ------------------------ */
 .joget_docs a:before {
   align-self: center;
   content: '';
-  margin-right: 8px;
+  margin-right: 13px;
   width: 20px;
   height: 20px;
   background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="152 32 152 88 208 88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="136" x2="160" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="168" x2="160" y2="168" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>');
