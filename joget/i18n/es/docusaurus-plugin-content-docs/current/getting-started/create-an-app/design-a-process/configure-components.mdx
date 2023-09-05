@@ -1,6 +1,6 @@
 ---
 id: configure-components
-title: Configure Components
+title: Configurar Componentes
 sidebar_position: 3
 slug: /getting-started/create-an-app/design-a-process/configure-components
 description: temp
@@ -9,211 +9,211 @@ tags: ['process']
 
 import Images from '@site/src/components/images/Images';
 
-After defining the process structure, it's time to map each component. The mapping process refers to connecting a process component to a form, list, user group, etc. All components added to the process need to be configured. Otherwise, the process will not work.
+Después de definir la estructura del proceso, es hora de mapear cada componente. El proceso de mapeo se refiere a la conexión de un componente del proceso a un formulario, lista, grupo de usuarios, etc. Todos los componentes agregados al proceso necesitan ser configurados. De lo contrario, el proceso no funcionará.
 
-## Mapping participants to users
+## Mapear participantes a usuarios
 
-Each existing participant needs to be associated with one user type.
+Cada participante existente debe estar asociado con un tipo de usuario.
 
-- **Step 1**: Click on a Participant. For this example, select the **Register** one.
+- **Paso 1**: Haga clic en un Participante. Para este ejemplo, seleccione el **Registro**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-1.png"
   wSize="65%"
 />
 
-- **Step 2**: Select **Configure Mapping** on the right panel.
+- **Paso 2**: Seleccione **Configurar Mapeo** en el panel derecho.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-2.png"
   wSize="65%"
 />
 
-- **Step 3**: Choose the group or specific users to be mapped to the Participant. For this case, the Participant is mapped to _Type_ **Departament**, where we selected the **Training and Consult** **Departament**. Click **Apply Changes** to finish mapping.
+- **Paso 3**: Elija el grupo o usuarios específicos a los que se asignarán al Participante. En este caso, el Participante se asigna al _Tipo_ **Departamento**, donde seleccionamos el **Departamento de Capacitación y Consultoría**. Haga clic en **Aplicar Cambios** para finalizar el mapeo.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-3.png"
   wSize="65%"
 />
 
-:::info Restrict access by mapping Participants
-When you map a Participant to a user group, only they will have access to the actions related to that portion of the process. In the above example, only the Training and Consult department users would have access to the **Submit Request** form.
+:::info Restringir el acceso mediante el mapeo de Participantes
+Cuando asigna un Participante a un grupo de usuarios, solo ellos tendrán acceso a las acciones relacionadas con esa parte del proceso. En el ejemplo anterior, solo los usuarios del departamento de Capacitación y Consultoría tendrían acceso al formulario **Enviar Solicitud**.
 :::
 
-## Mapping Activities to forms
+## Mapeo de Actividades a formularios
 
-Activities are related to actions users need to perform. Therefore, when you add a new activity to the process, you need to define which action it will associate with. The Travel Request app has two activities in its process. They are described individually to make it easier for you to understand.
+Las Actividades están relacionadas con las acciones que los usuarios deben realizar. Por lo tanto, cuando agregas una nueva actividad al proceso, debes definir con qué acción se asociará. La aplicación de Solicitud de Viaje tiene dos actividades en su proceso. Se describen individualmente para que sea más fácil de entender.
 
-### Submit Request
+### Enviar Solicitud
 
-The form related to the travel request was created in the previous steps. Consequently, you only need to map the activity to the request, as described in the steps below.
+El formulario relacionado con la solicitud de viaje se creó en los pasos anteriores. En consecuencia, solo necesitas mapear la actividad a la solicitud, como se describe en los siguientes pasos.
 
-- **Step 1**: Select the activity. For this example, select the **Submit Request**.
+- **Paso 1**: Selecciona la actividad. Para este ejemplo, selecciona **Enviar Solicitud**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-1.png"
   wSize="65%"
 />
 
-- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**, and then select the **Travel Request Form**. Click **Apply Changes**.
+- **Paso 2**: En el panel derecho, selecciona Mapeo y, en **Tipo**, elige **Formulario**, luego selecciona el **Formulario de Solicitud de Viaje**. Haz clic en **Aplicar Cambios**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-2.png"
   wSize="65%"
 />
 
-### Approve Request
+### Aprobar Solicitud
 
-The approval form was not created on the previous steps. We will create the approval form from the Process Builder page to show the flexibility provided by Joget. Follow the steps below to map the Approve Request activity to the new form.
+El formulario de aprobación no se creó en los pasos anteriores. Vamos a crear el formulario de aprobación desde la página del Constructor de Procesos para mostrar la flexibilidad proporcionada por Joget. Sigue los siguientes pasos para mapear la actividad de Aprobar Solicitud con el nuevo formulario.
 
-- **Step 1**: Select the activity **Approve Request** activity.
-- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**. Instead of selecting a form, Click on **+** button to create the Travel Approval Form.
+- **Paso 1**: Selecciona la actividad **Aprobar Solicitud**.
+- **Paso 2**: En el panel derecho, selecciona Mapeo y en **Tipo**, elige **Formulario**. En lugar de seleccionar un formulario, haz clic en el botón **+** para crear el Formulario de Aprobación de Viajes.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-1.png"
   wSize="65%"
 />
 
-- **Step 3**: Fill the form creation fields with the following information and then click **Save** to create the form.
+- **Paso 3**: Completa los campos de creación del formulario con la siguiente información y luego haz clic en **Guardar** para crear el formulario.
 
 <table>
   <thead>
     <tr>
-      <th>Field</th>
-      <th>Description</th>
-      <th>Value for this example</th>
+      <th>Campo</th>
+      <th>Descripción</th>
+      <th>Valor para este ejemplo</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Form ID</td>
-      <td>A unique identifier.</td>
+      <td>ID del Formulario</td>
+      <td>Un identificador único.</td>
       <td>travelApprovalForm</td>
     </tr>
     <tr>
-      <td>Form Name</td>
-      <td>A unique descriptive name.</td>
-      <td>Travel Approval Form</td>
+      <td>Nombre del Formulario</td>
+      <td>Un nombre descriptivo único.</td>
+      <td>Formulario de Aprobación de Viaje</td>
     </tr>
     <tr>
-      <td>Table Name</td>
-      <td>The database table name to store the form data.</td>
+      <td>Nombre de la Tabla</td>
+      <td>El nombre de la tabla de la base de datos para almacenar los datos del formulario.</td>
       <td>travel_requests</td>
     </tr>
   </tbody>
 </table>
 
-- **Step 4**: Select the **Travel Approval Form**. Then, to start building the form, click on **OPEN ITEN IN BUILDER**. You will be redirected to the Form Builder page.
+- **Paso 4**: Selecciona el **Formulario de Aprobación de Viaje**. Luego, para comenzar a construir el formulario, haz clic en **ABRIR ELEMENTO EN EL CONSTRUCTOR**. Serás redirigido a la página del Constructor de Formularios.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-3.png"
   wSize="65%"
 />
 
-- **Step 5**: To start building the new form, first let's add a **Subform**. It will be used to present the request information. Drag and drop the subform into the form.
+- **Paso 5**: Para comenzar a construir el nuevo formulario, primero agreguemos un **Subformulario**. Se utilizará para presentar la información de la solicitud. Arrastre y suelte el subformulario en el formulario.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-4.png"
   wSize="65%"
 />
 
-- **Step 6**: Select the subform to configure it. Define its Label as **Request**, its ID as **request**, and choose **Travel Request Form** on the Form field. As a result, the subform will present the information provided when creating the request, enabling the decision maker to approve or deny the request. Click **Apply Change**.
+- **Paso 6**: Seleccione el subformulario para configurarlo. Defina su etiqueta como **Solicitud**, su ID como **solicitud**, y elija **Formulario de Solicitud de Viaje** en el campo Formulario. Como resultado, el subformulario presentará la información proporcionada al crear la solicitud, lo que permitirá al tomador de decisiones aprobar o rechazar la solicitud. Haga clic en **Aplicar Cambios**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-5.png"
   wSize="65%"
 />
 
-- **Step 7**: Add a Radio button to the form, below the subform. The radio button will provide the approve and deny options.
+- **Paso 7**: Agregue un botón de radio al formulario, debajo del subformulario. El botón de radio proporcionará las opciones de aprobar y denegar.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-6.png"
   wSize="65%"
 />
 
-- **Step 8**: Click on the radio button to configure its properties. The necessary configurations are listed below:
+- **Paso 8**: Haga clic en el botón de radio para configurar sus propiedades. Las configuraciones necesarias se enumeran a continuación:
 
-  - Define Label as **Approval**.
-  - Define ID as **approval**.
-  - Check the **Display Option Vertically** box.
-  - Under **Options** click on **+ Add** to add the Approved and Rejected options.
-    - For the first option, define its Value and Label as **Approved**.
-    - For the second option, define its Value and Label as **Rejected**.
-  - Click on **Advanced Options** and for the **Workflow Variable** enter **status**.
-  - Click **Apply Change**.
+  - Defina el rótulo como **Aprobación**.
+  - Defina el ID como **approval**.
+  - Marque la casilla **Mostrar opciones verticalmente**.
+  - En **Opciones**, haga clic en **+ Agregar** para agregar las opciones Aprobado y Rechazado.
+    - Para la primera opción, defina su Valor y Rótulo como **Aprobado**.
+    - Para la segunda opción, defina su Valor y Rótulo como **Rechazado**.
+  - Haga clic en **Opciones avanzadas** y para la **Variable de flujo de trabajo**, ingrese **estado**.
+  - Haga clic en **Aplicar cambios**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-7.png"
   wSize="65%"
 />
 
-:::info Workflow Variables
-Workflow variables are used to determine operations in the process. By associating a workflow variable to the radio button, we ensure the variable will receive the selected value, which other components will use to determine the process behavior. For this example, the variable can receive the values Approved or Rejected, which will define whether the requester will receive approval for their travel request.
+:::info Variables de flujo de trabajo
+Las variables de flujo de trabajo se utilizan para determinar las operaciones en el proceso. Al asociar una variable de flujo de trabajo con el botón de radio, nos aseguramos de que la variable reciba el valor seleccionado, que otros componentes utilizarán para determinar el comportamiento del proceso. Para este ejemplo, la variable puede recibir los valores Aprobado o Rechazado, lo que definirá si el solicitante recibirá la aprobación de su solicitud de viaje.
 :::
 
-- **Step 9**: You've built the new form, which should look like the image below. Click on **Save** in the top right corner. Then, return to the process builder tab.
+- **Paso 9**: Has construido el nuevo formulario, que debería lucir como la imagen de abajo. Haz clic en **Guardar** en la esquina superior derecha. Luego, regresa a la pestaña del generador de procesos.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-8.png"
   wSize="65%"
 />
 
-- **Step 10**: Click **Apply Change** on the process builder tab to finish the **Approve Request** activity.
+- **Paso 10**: Haz clic en **Aplicar Cambios** en la pestaña del generador de procesos para finalizar la actividad **Aprobar Solicitud**.
 
-## Mapping Routes to Plugins
+## Mapeo de Rutas a Plugins
 
-Routes define the process flow when a process intersection exists. Routes determine the next step of a process based on workflow variables or other attributes. Follow the steps to configure the existing route in the Travel Request process.
+Las rutas definen el flujo del proceso cuando existe una intersección en el proceso. Las rutas determinan el próximo paso de un proceso basado en variables de flujo de trabajo u otros atributos. Sigue los pasos para configurar la ruta existente en el proceso de Solicitud de Viaje.
 
-- **Step 1**: Select the route within the process. Then select **Mapping** on the right panel and for Plugin choose **Simple Rules**. Thus, we can define a rule to process the **status** workflow variable provided by the Approve Request.
+- **Paso 1**: Selecciona la ruta dentro del proceso. Luego, selecciona **Mapeo** en el panel derecho y elige **Reglas Simples** como plugin. De esta manera, podemos definir una regla para procesar la variable de flujo de trabajo **estado** proporcionada por la Aprobación de la Solicitud.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-1.png"
   wSize="65%"
 />
 
-- **Step 2**: Define the rule to evaluate the workflow variable. Below you find all rule configurations and an image with the final configurations.
+- **Paso 2**: Define la regla para evaluar la variable de flujo de trabajo. A continuación, encontrarás todas las configuraciones de la regla y una imagen con las configuraciones finales.
 
-  - Click **+ Add Rule** to access the rule configuration.
-  - In the IF rule, click **+ Add Condition**.
-  - Set the **Variable** field to **status** and set the **Value** field to **Approved**.
-  - In the THEN rule, click on **+ Add Action** and set **Type** to **Transition**.
-  - Set **Transition** to **transition5 (Send Approved Email)**, meaning that this transition will happen when **status** is **Approved**.
-  - In the ELSE THEN rule, set the **Type** to **Transition**.
-  - Set **Transition** to **transition6 (Send Rejected Email)**, meaning that this transition will happen when **status** is **Rejected**.
+  - Haz clic en **+ Agregar Regla** para acceder a la configuración de la regla.
+  - En la regla IF, haz clic en **+ Agregar Condición**.
+  - Establece el campo **Variable** en **status** y establece el campo **Valor** en **Aprobado**.
+  - En la regla THEN, haz clic en **+ Agregar Acción** y establece el **Tipo** como **Transición**.
+  - Establece **Transición** en **transición5 (Enviar Correo de Aprobación)**, lo que significa que esta transición ocurrirá cuando **status** sea **Aprobado**.
+  - En la regla ELSE THEN, establece el **Tipo** como **Transición**.
+  - Establece **Transición** en **transición6 (Enviar Correo de Rechazo)**, lo que significa que esta transición ocurrirá cuando **status** sea **Rechazado**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-2.png"
   wSize="55%"
 />
 
-- **Step 3**: Click **Apply Change**.
+- **Paso 3**: Haz clic en **Aplicar Cambios**.
 
-## Mapping Tools to Plugins
+## Mapeo de Herramientas a Plugins
 
-Tools execute predefined actions automatically when a condition is triggered. In this case, tools automatically notify the requester about the travel approval or denials. To make the tool perform the action, we need to map it to a plugin, in this case, the **Email** plugin.
+Las herramientas ejecutan acciones predefinidas automáticamente cuando se cumple una condición. En este caso, las herramientas notifican automáticamente al solicitante sobre la aprobación o el rechazo del viaje. Para que la herramienta realice la acción, debemos mapearla a un complemento, en este caso, el complemento de **Correo Electrónico**.
 
-- **Step 1**: Select the desired tool within the process.
+- **Paso 1**: Selecciona la herramienta deseada dentro del proceso.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-1.png"
   wSize="65%"
 />
 
-- **Step 2**: On the right panel, select **Mapping** and for the **Tools**, choose **Email**.
+- **Paso 2**: En el panel derecho, selecciona **Mapeo** y, para las **Herramientas**, elige **Correo Electrónico**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-2.png"
   wSize="65%"
 />
 
-- **Step 3**: Configure the action. In this case, we would add all information for the communication Email. Then, click **Apply Changes**.
+- **Paso 3**: Configura la acción. En este caso, deberás agregar toda la información necesaria para el correo electrónico de comunicación. Luego, haz clic en **Aplicar Cambios**.
 
-:::info Each plugin has different requirements
-Each plugin will require different information to operate properly.
+:::info Cada complemento tiene requisitos diferentes
+Cada complemento requerirá información diferente para funcionar correctamente.
 :::
 
-## Test the Process
+## Probar el Proceso
 
-On the Process Builder page you can test the created process by running it. To run the process, use the **Run Process** button at the top right corner. When you run the
+En la página del Constructor de Procesos, puedes probar el proceso creado ejecutándolo. Para ejecutar el proceso, utiliza el botón **Ejecutar Proceso** en la esquina superior derecha. Cuando ejecutes el
 
-Congratulations, you have mapped all components within the process. Now, you can [integrate the process into the UI](./integrate-process-into-ui).
+Felicidades, has mapeado todos los componentes dentro del proceso. Ahora puedes [integrar el proceso en la interfaz de usuario](./integrate-process-into-ui).

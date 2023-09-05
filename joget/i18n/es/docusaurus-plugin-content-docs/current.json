@@ -8,7 +8,7 @@
     "description": "La etiqueta para la categoría Guías de Instalación en la barra lateral de documentos"
   },
   "sidebar.docs.category.Platform Overview": {
-    "message": "Descripción de la Plataforma",
+    "message": "Resumen de la Plataforma",
     "description": "La etiqueta para la categoría Descripción de la Plataforma en la barra lateral de documentos"
   },
   "sidebar.docs.category.Create an app": {
