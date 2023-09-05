@@ -1,0 +1,73 @@
+---
+id: design-a-list
+title: Design a List
+sidebar_position: 4
+slug: /getting-started/create-an-app/design-a-list
+description: This page presents the essential steps to design a new list
+tags: ['list']
+---
+
+import Video from '@site//src/components/video/Video';
+import Images from '@site/src/components/images/Images';
+
+It's time to create a list after creating the app and the form. You will use lists to display data to users. In this case, the list will show the data from the Travel Request form. Follow the steps on this page to create your first list.
+
+- **Step 1**: Access the **app composer** page.
+- **Step 2**: Create a new list using the **+** button on the **List Builder** column.
+- **Step 3**: Now, you will enter the list details, including:
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Value for this example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID</td>
+      <td>A unique identifier.</td>
+      <td>requestList</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>A unique descriptive name.</td>
+      <td>Travel Request List</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Describes the list's purpose.</td>
+      <td>List to present the data acquired by the Travel Request form.</td>
+    </tr>
+  </tbody>
+</table>
+
+- **Step 4**: Click **Save** to create the list. As a result, the **List Builder** will be launched.
+- **Step 5**: Select the data source. The options available are related to all data sources available on Joget. For this example, select the **Form Data**. Next, choose **Select of Data (Form Data)** option, which just appears above the selector.
+- **Step 6**: Choose a form. For this example, select the **Travel Request Form**.
+- **Step 7**: Design your list. First, click on **Design** button at the top of the page. All available columns from the data source are listed on the left. Drag and drop the desired columns to design your list. For this example, drag and drop the following columns:
+
+  - Name
+  - Travel Date (From)
+  - Travel Date (To)
+  - Reason
+  - Create By
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-list/list-creation.png"
+  alt="List creation example"
+/>
+
+:::info Edit columns
+Selecting each column from the list allows you to access several configurations that will change the list's appearance and behavior.
+:::
+
+- **Step 7**: Click **Preview** to check how the list looks.
+- **Step 8**: Click **Save** when you finish creating the list.
+
+The video below provides a visual representation of the steps mentioned previously.
+
+<Video url="https://www.youtube.com/embed/Z_mlAfVS_oQ?si=rFQKuBaBsd7u32D3" />
+
+Congratulations on designing a new app. Your next step is to [design a new UI](./design-a-ui).

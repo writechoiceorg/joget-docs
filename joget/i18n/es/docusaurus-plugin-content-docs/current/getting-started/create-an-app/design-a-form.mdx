@@ -1,0 +1,130 @@
+---
+id: design-a-form
+title: Design a Form
+sidebar_position: 3
+slug: /getting-started/create-an-app/design-a-form
+description: This pages presents the essential steps to design a new form
+tags: ['form']
+---
+
+import Video from '@site/src/components/video/Video';
+import Images from '@site/src/components/images/Images';
+
+We will create a form to continue the development of our Travel Request app. You will use forms to acquire data and store it on the server. Follow the steps on this page to create your first form.
+
+- **Step 1**: Access the **app composer** page. You're already on the app composer page if you just designed your first app.
+- **Step 2**: Create a new form using the **+** button on the **Form Builder** column.
+- **Step 3**: Now, you will enter the form details, including:
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Value for this example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Form ID</td>
+      <td>A unique identifier.</td>
+      <td>travelRequestForm</td>
+    </tr>
+    <tr>
+      <td>Form Name</td>
+      <td>A unique descriptive name.</td>
+      <td>Travel Request Form</td>
+    </tr>
+    <tr>
+      <td>Table Name</td>
+      <td>The database table name to store the form data.</td>
+      <td>travel_requests</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Describes the form functionalities and purpose.</td>
+      <td>Travel request form used as example on the app creation process.</td>
+    </tr>
+  </tbody>
+</table>
+
+:::info Forms sharing information
+Different forms can share data by pointing to the same table name. You can use this functionality to create comprehensive tables to be used as a database.
+:::
+
+- **Step 4**: Click **Save** to create the form. As a result, the **Form Builder** will be launched.
+- **Step 5**: Create a section. By clicking on the section, you can change its label and ID. After, click **Apply Change** to save your modifications. Use the following name and ID.
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Value for this example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>A unique descriptive name.</td>
+      <td>Travel Request Details</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>A unique identifier.</td>
+      <td>travel_request_details</td>
+    </tr>
+  </tbody>
+</table>
+
+:::info Label and IDs
+When renaming sections or form fields, Joget will suggest IDs based on the provided Label. You can accept them or change to one that best fits your needs.
+:::
+
+- **Step 6**: Customize the form. Use the left panel to add fields of different types into your form by dragging and dropping them into one section. You can modify the Label and ID for each new field included in your new form by selecting the desired field. For this example, add the following fields with the respective configuration:
+
+<table>
+  <thead>
+    <tr>
+      <th>Field type</th>
+      <th>Label</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text field</td>
+      <td>Name</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td>Data Picker</td>
+      <td>Travel Date (From)</td>
+      <td>travel_date_from</td>
+    </tr>
+    <tr>
+      <td>Data Picker</td>
+      <td>Travel Date (To)</td>
+      <td>travel_date_to</td>
+    </tr>
+    <tr>
+      <td>Text Area</td>
+      <td>Reason</td>
+      <td>Review</td>
+    </tr>
+  </tbody>
+</table>
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-form/form-section-creation.png"
+  alt="Form section creation example"
+/>
+
+- **Step 7**: Click **Preview** to check how the form looks.
+- **Step 8**: Click **Save** when you finish creating the form.
+
+The video below provides a visual representation of the steps mentioned previously.
+
+<Video url="https://www.youtube.com/embed/ANmu9ckiqvI?si=wAjTLGDc2fZMqvCN" />
+
+You've successfully designed a form. Your next step is to [design a new list](./design-a-list).
