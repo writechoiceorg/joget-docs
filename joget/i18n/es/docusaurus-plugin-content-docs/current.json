@@ -19,8 +19,8 @@
     "message": "Diseñar un proceso",
     "description": "La etiqueta para la categoría Diseñar un proceso en la barra lateral de documentos"
   },
-  "sidebar.docs.doc.Joget Docs": {
-    "message": "Documentación de Joget",
+  "sidebar.docs.doc.Introduction": {
+    "message": "Introducción",
     "description": "La etiqueta para el elemento de documento Documentación de Joget en la barra lateral de documentos, enlazando al documento joget-docs"
   }
 }
