@@ -11,6 +11,10 @@
   color: white;
 }
 
+.navbar__item, .navbar__link {
+  font-size: 14px !important;
+}
+
 .navbar--fixed-top {
   padding-left: 175px;
 }

@@ -15,6 +15,10 @@
   margin: 0 !important;
 }
 
+.menu__link {
+  font-size: 14px;
+}
+
 .sidebar_title {
   padding-left: 0 !important;
   text-transform: uppercase;
