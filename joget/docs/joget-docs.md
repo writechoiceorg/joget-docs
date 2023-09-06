@@ -1,6 +1,6 @@
 ---
 id: joget-docs
-title: Joget Docs
+title: Introduction
 sidebar_position: 1
 slug: /joget-docs
 description: Overview of joget docs
@@ -8,11 +8,9 @@ description: Overview of joget docs
 
 Navigating the complexities of modern business operations can be challenging. That's where Joget comes in. We're here to simplify your workflow management processes, allowing you to focus on what truly matters – your business growth. In this documentation, we'll provide a comprehensive overview of the Joget solution and how it can transform how you work.
 
-## A glimpse into Joget
+## Benefits of Joget
 
 Joget isn't just another software solution, it's a partner on your journey to efficiency. Our platform is designed to streamline your workflows, making tasks more manageable and processes more intuitive. With Joget, you're not just adopting a tool – you're embracing a smoother way of working.
-
-## Benefits of Joget
 
 - **User-friendly power**: Joget's user-friendly interface puts the power of automation and app creation in your hands, even if you're not a coding expert.
 - **Tailored to you**: Our flexible and customizable platform allows you to adapt it to your specific needs without compromise.

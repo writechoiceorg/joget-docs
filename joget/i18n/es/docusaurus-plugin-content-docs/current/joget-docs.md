@@ -8,11 +8,9 @@ description: Overview of joget docs
 
 Navegar por las complejidades de las operaciones comerciales modernas puede ser desafiante. Ahí es donde entra Joget. Estamos aquí para simplificar sus procesos de gestión de flujo de trabajo, permitiéndole centrarse en lo que realmente importa: el crecimiento de su negocio. En esta documentación, proporcionaremos una visión general completa de la solución Joget y cómo puede transformar la forma en que trabaja.
 
-## Un vistazo a Joget
+## Beneficios de Joget
 
 Joget no es solo otra solución de software, es un socio en su viaje hacia la eficiencia. Nuestra plataforma está diseñada para agilizar sus flujos de trabajo, haciendo que las tareas sean más manejables y los procesos más intuitivos. Con Joget, no está adoptando solo una herramienta, está abrazando una forma más fluida de trabajar.
-
-## Beneficios de Joget
 
 - **Potencia fácil de usar**: La interfaz amigable de Joget pone el poder de la automatización y la creación de aplicaciones en sus manos, incluso si no es un experto en codificación.
 - **Adaptado a usted**: Nuestra plataforma flexible y personalizable le permite adaptarla a sus necesidades específicas sin compromisos.

@@ -14,7 +14,7 @@ import HomepageSection from '../components/Homepage/Section';
 
 const sectionContent = [
   {
-    title1: 'Low Code Application',
+    title1: 'Low-Code Application',
     title2: 'Guides',
   },
   {

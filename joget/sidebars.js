@@ -25,7 +25,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'joget-docs',
-      label: 'Joget Docs',
+      label: 'Introduction',
       className: 'sidebar_first_options joget_docs',
     },
     // {
