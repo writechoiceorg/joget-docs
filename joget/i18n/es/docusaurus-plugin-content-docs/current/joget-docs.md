@@ -33,7 +33,7 @@ Integración: Explore cómo Joget se integra perfectamente en sus sistemas exist
 
 Para comenzar, le sugerimos que siga todos los pasos de la Guía de Inicio de Joget:
 
-1. [Guías de Instalación](./installing-guides): Utilice estas páginas para aprender la mejor manera de acceder al sistema Joget en su máquina.
-2. [Descripción de la Plataforma](./platform-overview): Conozca todas las soluciones y elementos disponibles en la solución Joget.
-3. [Crear una Aplicación](./create-an-app): Cree su primera aplicación Joget, cubriendo todos los pasos y elementos necesarios para tener una aplicación funcionando.
+1. [Guías de Instalación](./getting-started/installing-guides): Utilice estas páginas para aprender la mejor manera de acceder al sistema Joget en su máquina.
+2. [Descripción de la Plataforma](./getting-started/platform-overview): Conozca todas las soluciones y elementos disponibles en la solución Joget.
+3. [Crear una Aplicación](./getting-started/create-an-app): Cree su primera aplicación Joget, cubriendo todos los pasos y elementos necesarios para tener una aplicación funcionando.
 

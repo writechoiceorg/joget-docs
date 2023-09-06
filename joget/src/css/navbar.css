@@ -11,6 +11,10 @@
   color: white;
 }
 
+.navbar__item, .navbar__link {
+  font-size: 14px !important;
+}
+
 .navbar--fixed-top {
   padding-left: 175px;
 }
@@ -26,6 +30,10 @@
 
 .navbar__items--right {
   margin: 0 160px 0 0;
+}
+
+.navbar__item {
+  margin-right: 100px;
 }
 
 .language_dropdown {
