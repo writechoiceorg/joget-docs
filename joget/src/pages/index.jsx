@@ -3,10 +3,12 @@ import React from 'react';
 // import Link from '@docusaurus/Link';
 // import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+// import Translate, { translate } from '@docusaurus/Translate';
 
 // import styles from './index.module.css';
 import '../css/HomePage.css';
 import '../css/sidebar.css';
+import '../css/navbar.css';
 import HomepageHeader from '../components/Homepage/Header';
 import HomepageSection from '../components/Homepage/Section';
 

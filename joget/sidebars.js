@@ -57,7 +57,7 @@ const sidebars = {
       className: 'sidebar_first_options platform_overview',
       link: {
         type: 'doc',
-        id: 'getting-started/platform-overview/plataform-overview',
+        id: 'getting-started/platform-overview/platform-overview',
       },
       items: [
         'getting-started/platform-overview/app-center',

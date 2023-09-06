@@ -36,8 +36,16 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
-  },
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      es: {
+        label: 'Español',
+      },
+    },
+  }, 
 
   presets: [
     [
@@ -89,18 +97,24 @@ const config = {
         },
         items: [
           {
+            href: '/',
+            sidebarId: 'docs',
+            position: 'left',
+            label: 'Home.',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'docs',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorial.',
           },
-          // {
-          //   type: 'dropdown',
-          //   position: 'left',
-          //   label: 'Dropdown Menu',
-          //   items: [{ to: '/intro', label: 'Teste1' }, { to: '/intro', label: 'Teste2 ' }],
-          //   // dropdownActiveClassDisabled: false,
-          // },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+            className: 'language_dropdown'
+            // label: 'Language',
+            // dropdownActiveClassDisabled: false,
+          },
 
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {

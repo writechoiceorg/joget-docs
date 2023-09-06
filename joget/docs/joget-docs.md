@@ -33,6 +33,6 @@ This documentation will guide you through every aspect of the Joget solution. We
 
 To start, we suggest you to go over all steps of Joget Getting Started guide:
 
-1. [Install Guides](./installing-guides): Use these pages to learn the best way to have access to the Joget system on your machine.
-2. [Platform Overview](./platform-overview): Learn about all solutions and elements available on the Joget solution.
-3. [Create an App](./create-an-app): Create your first Joget app, covering all steps and elements necessary to have an app up and running.
+1. [Install Guides](./getting-started/installing-guides): Use these pages to learn the best way to have access to the Joget system on your machine.
+2. [Platform Overview](./getting-started/platform-overview): Learn about all solutions and elements available on the Joget solution.
+3. [Create an App](./getting-started/create-an-app): Create your first Joget app, covering all steps and elements necessary to have an app up and running.

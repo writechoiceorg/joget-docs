@@ -1,0 +1,130 @@
+---
+id: design-a-form
+title: Diseñar un Formulario
+sidebar_position: 3
+slug: /getting-started/create-an-app/design-a-form
+description: This pages presents the essential steps to design a new form
+tags: ['form']
+---
+
+import Video from '@site/src/components/video/Video';
+import Images from '@site/src/components/images/Images';
+
+Crearemos un formulario para continuar con el desarrollo de nuestra aplicación de Solicitud de Viaje. Utilizarás formularios para recopilar datos y almacenarlos en el servidor. Sigue los pasos en esta página para crear tu primer formulario.
+
+- **Paso 1**: Accede a la página del **compositor de aplicaciones**. Ya estás en la página del compositor de aplicaciones si acabas de diseñar tu primera aplicación.
+- **Paso 2**: Crea un nuevo formulario usando el botón **+** en la columna del **Constructor de Formularios**.
+- **Paso 3**: Ahora, ingresarás los detalles del formulario, que incluyen:
+
+<table>
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+      <th>Valor para este ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID del Formulario</td>
+      <td>Un identificador único.</td>
+      <td>formularioSolicitudViaje</td>
+    </tr>
+    <tr>
+      <td>Nombre del Formulario</td>
+      <td>Un nombre descriptivo único.</td>
+      <td>Formulario de Solicitud de Viaje</td>
+    </tr>
+    <tr>
+      <td>Nombre de la Tabla</td>
+      <td>El nombre de la tabla de base de datos para almacenar los datos del formulario.</td>
+      <td>solicitudes_de_viaje</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>Describe las funcionalidades y el propósito del formulario.</td>
+      <td>Formulario de solicitud de viaje utilizado como ejemplo en el proceso de creación de aplicaciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+:::info Compartir información entre formularios
+Diferentes formularios pueden compartir datos al apuntar al mismo nombre de tabla. Puedes usar esta funcionalidad para crear tablas completas que se utilizarán como base de datos.
+:::
+
+- **Paso 4**: Haz clic en **Guardar** para crear el formulario. Como resultado, se lanzará el **Constructor de Formularios**.
+- **Paso 5**: Crea una sección. Al hacer clic en la sección, puedes cambiar su etiqueta e ID. Luego, haz clic en **Aplicar Cambio** para guardar tus modificaciones. Utiliza el siguiente nombre e ID.
+
+<table>
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+      <th>Valor para este ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Etiqueta</td>
+      <td>Un nombre descriptivo único.</td>
+      <td>Detalles de la Solicitud de Viaje</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>Un identificador único.</td>
+      <td>detalles_solicitud_de_viaje</td>
+    </tr>
+  </tbody>
+</table>
+
+:::info Etiquetas e IDs
+Cuando cambias el nombre de las secciones o los campos del formulario, Joget sugerirá IDs basados en la etiqueta proporcionada. Puedes aceptarlos o cambiarlos según tus necesidades.
+:::
+
+- **Paso 6**: Personaliza el formulario. Usa el panel izquierdo para agregar campos de diferentes tipos a tu formulario arrastrándolos y soltándolos en una sección. Puedes modificar la etiqueta e ID de cada nuevo campo incluido en tu nuevo formulario seleccionando el campo deseado. Para este ejemplo, agrega los siguientes campos con la configuración respectiva:
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de Campo</th>
+      <th>Etiqueta</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Campo de Texto</td>
+      <td>Nombre</td>
+      <td>nombre</td>
+    </tr>
+    <tr>
+      <td>Selector de Fecha</td>
+      <td>Fecha de Viaje (Desde)</td>
+      <td>fecha_viaje_desde</td>
+    </tr>
+    <tr>
+      <td>Selector de Fecha</td>
+      <td>Fecha de Viaje (Hasta)</td>
+      <td>fecha_viaje_hasta</td>
+    </tr>
+    <tr>
+      <td>Área de Texto</td>
+      <td>Motivo</td>
+      <td>motivo</td>
+    </tr>
+  </tbody>
+</table>
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-form/form-section-creation.png"
+  alt="Ejemplo de creación de sección de formulario"
+/>
+
+- **Paso 7**: Haz clic en **Vista Previa** para verificar cómo se ve el formulario.
+- **Paso 8**: Haz clic en **Guardar** cuando termines de crear el formulario.
+
+El siguiente video proporciona una representación visual de los pasos mencionados anteriormente.
+
+<Video url="https://www.youtube.com/embed/ANmu9ckiqvI?si=wAjTLGDc2fZMqvCN" />
+
+Has diseñado con éxito un formulario. Tu próximo paso es [diseñar una nueva lista](./design-a-list).

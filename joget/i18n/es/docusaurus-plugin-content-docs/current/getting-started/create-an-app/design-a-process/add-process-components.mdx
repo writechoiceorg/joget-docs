@@ -1,0 +1,46 @@
+---
+id: add-process-components
+title: Añadir Componentes de Proceso
+sidebar_position: 2
+slug: /getting-started/create-an-app/design-a-process/add-process-components
+description: temp
+tags: ['process']
+---
+
+import Images from '@site/src/components/images/Images';
+
+Ahora que conoces la interfaz del Constructor de Procesos, podemos estructurar el proceso de Solicitud de Viaje.
+
+El proceso de Solicitud de Viaje se compone de dos **Participantes**. Uno se refiere a todos los usuarios que registrarán la solicitud de viaje. El segundo participante se relaciona con el usuario que aprobará o denegará la solicitud. Después de la aprobación o denegación, el sistema enviará automáticamente un correo electrónico informando la decisión con respecto a la solicitud de viaje.
+
+Para crear este proceso, seguirás los pasos a continuación. Asegúrate de haber completado todos los pasos anteriores antes de continuar.
+
+- **Paso 1**: Agregar una **Actividad** al participante **Registrar** y conectar el **Inicio** a ella. Cambia la etiqueta de la nueva actividad a **Enviar Solicitud**.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-1.png"
+  wSize="75%"
+/>
+
+- **Paso 2**: Mover una nueva **Actividad** al participante **Aprobador** y conectar el **Enviar Solicitud** a ella. Cambia su etiqueta a **Aprobar Solicitud**.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-2.png"
+  wSize="75%"
+/>
+
+- **Paso 3**: Integrar una ruta al participante **Aprobador** y conectar el **Aprobar Solicitud** a ella. La ruta evaluará si el estado de la solicitud está aprobado y definirá el siguiente paso del proceso.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-3.png"
+  wSize="75%"
+/>
+
+- **Paso 4**: Agregar dos nuevas herramientas al participante **Aprobador** y conectar la ruta a ellas. Renómbralas como **Enviar Correo Electrónico Aprobado** y **Enviar Correo Electrónico Rechazado**. Agrega y luego conecta cada componente de herramienta a un componente de fin.
+
+<Images
+  imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-4.png"
+  wSize="75%"
+/>
+
+Actualmente, hemos establecido la estructura del proceso, pero aún necesitamos configurar cada paso. Para hacerlo, debemos asociar componentes con formularios y definir reglas de funcionamiento. Accede a la página [Configurar Componentes](./configure-components) para continuar con el tutorial.

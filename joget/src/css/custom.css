@@ -70,6 +70,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* --main-font: Open Sans; */
   --ifm-font-family-base: opensans, sans-serif !important;
+  --ifm-link-color: #009265;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -84,26 +85,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.navbar {
-  background: linear-gradient(90deg, #0B3932 0%, #0E4A40 100%);
-  height: 90px;
+/*-------------------------------- Markdown Header sizes ------------------------------  */
+
+.markdown h1 {
+  --ifm-h1-font-size: 2.125rem !important;
 }
 
-.navbar__items .navbar__link, .navbar__items--right {
-  color: white;
+.markdown h2 {
+  --ifm-h2-font-size: 1.625rem !important;
 }
 
-.navbar--fixed-top {
-  padding-left: 175px;
-}
-
-.navbar__toggle {
-  position: absolute;
-  left: 15px;
-}
-
-.navbar__toggle svg {
-  color: white;
+.markdown h3 {
+  --ifm-h3-font-size: 1.375rem !important;
 }
 
 /*-------------------------------- Tables configuration ------------------------------  */
