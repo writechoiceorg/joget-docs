@@ -97,10 +97,16 @@ const config = {
         },
         items: [
           {
+            href: '/',
+            sidebarId: 'docs',
+            position: 'left',
+            label: 'Home.',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'docs',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorial.',
           },
           {
             type: 'localeDropdown',
