@@ -1,0 +1,219 @@
+---
+id: configure-components
+title: Configurar Componentes
+sidebar_position: 3
+slug: /getting-started/create-an-app/design-a-process/configure-components
+description: temp
+tags: ['process']
+---
+
+import Images from '@site/src/components/images/Images';
+
+Después de definir la estructura del proceso, es hora de mapear cada componente. El proceso de mapeo se refiere a la conexión de un componente del proceso a un formulario, lista, grupo de usuarios, etc. Todos los componentes agregados al proceso necesitan ser configurados. De lo contrario, el proceso no funcionará.
+
+## Mapear participantes a usuarios
+
+Cada participante existente debe estar asociado con un tipo de usuario.
+
+- **Paso 1**: Haga clic en un Participante. Para este ejemplo, seleccione el **Registro**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-1.png"
+  wSize="65%"
+/>
+
+- **Paso 2**: Seleccione **Configurar Mapeo** en el panel derecho.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-2.png"
+  wSize="65%"
+/>
+
+- **Paso 3**: Elija el grupo o usuarios específicos a los que se asignarán al Participante. En este caso, el Participante se asigna al _Tipo_ **Departamento**, donde seleccionamos el **Departamento de Capacitación y Consultoría**. Haga clic en **Aplicar Cambios** para finalizar el mapeo.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-3.png"
+  wSize="65%"
+/>
+
+:::info Restringir el acceso mediante el mapeo de Participantes
+Cuando asigna un Participante a un grupo de usuarios, solo ellos tendrán acceso a las acciones relacionadas con esa parte del proceso. En el ejemplo anterior, solo los usuarios del departamento de Capacitación y Consultoría tendrían acceso al formulario **Enviar Solicitud**.
+:::
+
+## Mapeo de Actividades a formularios
+
+Las Actividades están relacionadas con las acciones que los usuarios deben realizar. Por lo tanto, cuando agregas una nueva actividad al proceso, debes definir con qué acción se asociará. La aplicación de Solicitud de Viaje tiene dos actividades en su proceso. Se describen individualmente para que sea más fácil de entender.
+
+### Enviar Solicitud
+
+El formulario relacionado con la solicitud de viaje se creó en los pasos anteriores. En consecuencia, solo necesitas mapear la actividad a la solicitud, como se describe en los siguientes pasos.
+
+- **Paso 1**: Selecciona la actividad. Para este ejemplo, selecciona **Enviar Solicitud**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-1.png"
+  wSize="65%"
+/>
+
+- **Paso 2**: En el panel derecho, selecciona Mapeo y, en **Tipo**, elige **Formulario**, luego selecciona el **Formulario de Solicitud de Viaje**. Haz clic en **Aplicar Cambios**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-2.png"
+  wSize="65%"
+/>
+
+### Aprobar Solicitud
+
+El formulario de aprobación no se creó en los pasos anteriores. Vamos a crear el formulario de aprobación desde la página del Constructor de Procesos para mostrar la flexibilidad proporcionada por Joget. Sigue los siguientes pasos para mapear la actividad de Aprobar Solicitud con el nuevo formulario.
+
+- **Paso 1**: Selecciona la actividad **Aprobar Solicitud**.
+- **Paso 2**: En el panel derecho, selecciona Mapeo y en **Tipo**, elige **Formulario**. En lugar de seleccionar un formulario, haz clic en el botón **+** para crear el Formulario de Aprobación de Viajes.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-1.png"
+  wSize="65%"
+/>
+
+- **Paso 3**: Completa los campos de creación del formulario con la siguiente información y luego haz clic en **Guardar** para crear el formulario.
+
+<table>
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Descripción</th>
+      <th>Valor para este ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID del Formulario</td>
+      <td>Un identificador único.</td>
+      <td>travelApprovalForm</td>
+    </tr>
+    <tr>
+      <td>Nombre del Formulario</td>
+      <td>Un nombre descriptivo único.</td>
+      <td>Formulario de Aprobación de Viaje</td>
+    </tr>
+    <tr>
+      <td>Nombre de la Tabla</td>
+      <td>El nombre de la tabla de la base de datos para almacenar los datos del formulario.</td>
+      <td>travel_requests</td>
+    </tr>
+  </tbody>
+</table>
+
+- **Paso 4**: Selecciona el **Formulario de Aprobación de Viaje**. Luego, para comenzar a construir el formulario, haz clic en **ABRIR ELEMENTO EN EL CONSTRUCTOR**. Serás redirigido a la página del Constructor de Formularios.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-3.png"
+  wSize="65%"
+/>
+
+- **Paso 5**: Para comenzar a construir el nuevo formulario, primero agreguemos un **Subformulario**. Se utilizará para presentar la información de la solicitud. Arrastre y suelte el subformulario en el formulario.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-4.png"
+  wSize="65%"
+/>
+
+- **Paso 6**: Seleccione el subformulario para configurarlo. Defina su etiqueta como **Solicitud**, su ID como **solicitud**, y elija **Formulario de Solicitud de Viaje** en el campo Formulario. Como resultado, el subformulario presentará la información proporcionada al crear la solicitud, lo que permitirá al tomador de decisiones aprobar o rechazar la solicitud. Haga clic en **Aplicar Cambios**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-5.png"
+  wSize="65%"
+/>
+
+- **Paso 7**: Agregue un botón de radio al formulario, debajo del subformulario. El botón de radio proporcionará las opciones de aprobar y denegar.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-6.png"
+  wSize="65%"
+/>
+
+- **Paso 8**: Haga clic en el botón de radio para configurar sus propiedades. Las configuraciones necesarias se enumeran a continuación:
+
+  - Defina el rótulo como **Aprobación**.
+  - Defina el ID como **approval**.
+  - Marque la casilla **Mostrar opciones verticalmente**.
+  - En **Opciones**, haga clic en **+ Agregar** para agregar las opciones Aprobado y Rechazado.
+    - Para la primera opción, defina su Valor y Rótulo como **Aprobado**.
+    - Para la segunda opción, defina su Valor y Rótulo como **Rechazado**.
+  - Haga clic en **Opciones avanzadas** y para la **Variable de flujo de trabajo**, ingrese **estado**.
+  - Haga clic en **Aplicar cambios**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-7.png"
+  wSize="65%"
+/>
+
+:::info Variables de flujo de trabajo
+Las variables de flujo de trabajo se utilizan para determinar las operaciones en el proceso. Al asociar una variable de flujo de trabajo con el botón de radio, nos aseguramos de que la variable reciba el valor seleccionado, que otros componentes utilizarán para determinar el comportamiento del proceso. Para este ejemplo, la variable puede recibir los valores Aprobado o Rechazado, lo que definirá si el solicitante recibirá la aprobación de su solicitud de viaje.
+:::
+
+- **Paso 9**: Has construido el nuevo formulario, que debería lucir como la imagen de abajo. Haz clic en **Guardar** en la esquina superior derecha. Luego, regresa a la pestaña del generador de procesos.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-8.png"
+  wSize="65%"
+/>
+
+- **Paso 10**: Haz clic en **Aplicar Cambios** en la pestaña del generador de procesos para finalizar la actividad **Aprobar Solicitud**.
+
+## Mapeo de Rutas a Plugins
+
+Las rutas definen el flujo del proceso cuando existe una intersección en el proceso. Las rutas determinan el próximo paso de un proceso basado en variables de flujo de trabajo u otros atributos. Sigue los pasos para configurar la ruta existente en el proceso de Solicitud de Viaje.
+
+- **Paso 1**: Selecciona la ruta dentro del proceso. Luego, selecciona **Mapeo** en el panel derecho y elige **Reglas Simples** como plugin. De esta manera, podemos definir una regla para procesar la variable de flujo de trabajo **estado** proporcionada por la Aprobación de la Solicitud.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-1.png"
+  wSize="65%"
+/>
+
+- **Paso 2**: Define la regla para evaluar la variable de flujo de trabajo. A continuación, encontrarás todas las configuraciones de la regla y una imagen con las configuraciones finales.
+
+  - Haz clic en **+ Agregar Regla** para acceder a la configuración de la regla.
+  - En la regla IF, haz clic en **+ Agregar Condición**.
+  - Establece el campo **Variable** en **status** y establece el campo **Valor** en **Aprobado**.
+  - En la regla THEN, haz clic en **+ Agregar Acción** y establece el **Tipo** como **Transición**.
+  - Establece **Transición** en **transición5 (Enviar Correo de Aprobación)**, lo que significa que esta transición ocurrirá cuando **status** sea **Aprobado**.
+  - En la regla ELSE THEN, establece el **Tipo** como **Transición**.
+  - Establece **Transición** en **transición6 (Enviar Correo de Rechazo)**, lo que significa que esta transición ocurrirá cuando **status** sea **Rechazado**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-2.png"
+  wSize="55%"
+/>
+
+- **Paso 3**: Haz clic en **Aplicar Cambios**.
+
+## Mapeo de Herramientas a Plugins
+
+Las herramientas ejecutan acciones predefinidas automáticamente cuando se cumple una condición. En este caso, las herramientas notifican automáticamente al solicitante sobre la aprobación o el rechazo del viaje. Para que la herramienta realice la acción, debemos mapearla a un complemento, en este caso, el complemento de **Correo Electrónico**.
+
+- **Paso 1**: Selecciona la herramienta deseada dentro del proceso.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-1.png"
+  wSize="65%"
+/>
+
+- **Paso 2**: En el panel derecho, selecciona **Mapeo** y, para las **Herramientas**, elige **Correo Electrónico**.
+
+<Images
+  imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-2.png"
+  wSize="65%"
+/>
+
+- **Paso 3**: Configura la acción. En este caso, deberás agregar toda la información necesaria para el correo electrónico de comunicación. Luego, haz clic en **Aplicar Cambios**.
+
+:::info Cada complemento tiene requisitos diferentes
+Cada complemento requerirá información diferente para funcionar correctamente.
+:::
+
+## Probar el Proceso
+
+En la página del Constructor de Procesos, puedes probar el proceso creado ejecutándolo. Para ejecutar el proceso, utiliza el botón **Ejecutar Proceso** en la esquina superior derecha. Cuando ejecutes el
+
+Felicidades, has mapeado todos los componentes dentro del proceso. Ahora puedes [integrar el proceso en la interfaz de usuario](./integrate-process-into-ui).
