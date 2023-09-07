@@ -7,6 +7,8 @@ description: Presents the capabilities and how to use the app generator.
 tags: ['app-generator']
 ---
 
+import Images from '@site/src/components/images/Images';
+
 The App Generator feature made its debut in version 4. This powerful tool will help you streamline the creation of Joget Workflow apps, providing an agile approach for both rapid prototyping and comprehensive development, all while maintaining a user-centric perspective.
 
 App Generator is perfect for boosting app development and smoothing early interactions with end-users. With its capabilities, you can automatically shape an app with lists, CRUD functionality (Create-Read-Update-Delete), a versatile approval process, and the sleek Twitter Bootstrap theme.
@@ -15,18 +17,88 @@ To generate a new app, you need to define its components first. Therefore, we su
 
 ## Using the App Generator
 
-To understand the potential of the App Generator, we present a guide on how to create an app below quickly.
+To understand the potential of the App Generator, we present below a guide on how to quickly create an app.
 
-1. **Craft your form**: Create and design your form according to your requirements. Once you're satisfied, remember to save the form. If you are not familiar with creating forms, check the [Create an App](./create-an-app) guide.
-2. **Initiate app generation**: Click on **Generate App** at the top right corner of the Form Builder.
-3. **Navigate the App Generator dialog**: A dialogue box will appear providing several options of to configure your app covering your needs:
+- **Step 1**: Access the **App Composer** page using the **Administrator Bar**.
+- **Step 2**: Create a new Form using the **+** button on the **Form Builder** column. If you are not familiar with creating forms, check the [Create an App](./create-an-app) guide.
 
-   - **Generate datalist**: For data display.
-   - **Generate CRUD**: Enabling Create-Read-Update-Delete actions.
-   - **Incorporate approval process**: Seamlessly integrating approval workflows.
-   - **Incorporate assignment process**: Streamlining task assignments.
-   - **Advanced generation**: Fine-tune options for a tailored output.
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-1.png"
+  wSize="75%"
+/>
 
-4. **Generate your app**: After setting the configurations, click **Generate**.
-5. **Witness the transformation**: Refresh your App design page after the generation process concludes. Behold an array of auto-generated forms, lists, UI components, and processes will be available to you on the App Composer.
-6. **Use your app**: The new app is automatically published. It will be available at the App Center, where you can launch it and start using.
+- **Step 3**: Fulfill the Form details. For this guide, use the information presented in the table below. Then, click **Save**. The **Form Builder** will be launched.
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Value for this example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Form ID</td>
+      <td>A unique identifier.</td>
+      <td>appGeneratorTest</td>
+    </tr>
+    <tr>
+      <td>Form Name</td>
+      <td>A unique descriptive name.</td>
+      <td>App Generator Test</td>
+    </tr>
+    <tr>
+      <td>Table Name</td>
+      <td>The database table name to store the form data.</td>
+      <td>new_table</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Describes the form functionalities and purpose.</td>
+      <td>Form to test the App Generator functionality.</td>
+    </tr>
+  </tbody>
+</table>
+
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-2.png"
+  wSize="75%"
+/>
+
+- **Step 4**: Start building the Form. To be able to use the App Generator, you need to have at least one element on your Form. Thus, Drag and drop a **Text Field** from the Palette (left panel) to the Canvas (central area). Then, save the Form using the **Save** button at the top right corner.
+
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-3.png"
+  wSize="75%"
+/>
+
+- **Step 5**: Open the **App Generator**. After saving the Form with at least one element, the **App Generator** is enabled, allowing you to use it. Click on the **App Generator** at the left of the **Save** button.
+
+- **Step 6**: Use the **App Generator**. A dialogue box will appear, providing several options listed below so that you can define the new app's purpose. You can access additional information using the **More info** and define advanced configurations using the **Advanced Generation** for each option. For the current guide, we will select only the **Generate Process - Approval Process**. Then, click **Generate**. Your new app will be created. The following steps are optional.
+
+  - **Generate List**: For data display.
+  - **Generate CRUD**: Enabling Create-Read-Update-Delete actions.
+  - **Generate Process - Approval Process**: Seamlessly integrating approval workflows.
+  - **Generate Process - Assignment Process**: Streamlining task assignments.
+
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-4.png"
+  wSize="75%"
+/>
+
+- **Step 7** (Optional): After generating the app, you can continue editing its Process. If you choose to do it, you will be redirected to the **Process Builder** page, where you can access all steps automatically created for the recently created app. Access the [Create an App](./create-an-app) guide to learn how processes work on Joget.
+
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-7.png"
+  wSize="100%"
+/>
+
+- **Step 8** (Optional): Return to the **App Composer** page to see all components generated after running the **App Generator**. All components named **App Generator** result from previous steps and are ready for use. In addition, the new app is automatically published. It will be available at the **App Center**, where you can launch and use it.
+
+<Images
+  imgURL="/img/getting-started/plataform-overview/app-generator/app-composer-8.png"
+  wSize="100%"
+/>
+
+The App Generator provides an easy way to start creating new apps. If your application requires additional configuration, you can access and edit each component. The next step of this getting started guide is to learn how to create and use each component available on Joget. Access the [Create an App](./create-an-app) to continue your journey with Joget.
