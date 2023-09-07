@@ -197,8 +197,51 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 440px) {
+  .hero h1, .sectionTitle1, .sectionTitle2 {
+    font-size: 2.5em !important;
+  }
+
+  .sectionContainer p {
+    max-width: 100%;
+  }
+
+  .hero p {
+    font-size: 1.2em !important;
+  }
   .hero {
     background-image: url('https://raw.githubusercontent.com/writechoiceorg/joget-docs/main/joget/static/img/HomeBackgroundSmartPhone.png');
+  }
+
+  .header_container {
+    margin: 0 25px;
+  }
+
+  .sectionContainer {
+    margin: 50px 25px;;
+  }
+}
+
+@media (max-width: 395px) {
+  .sectionTitle1, .sectionTitle2 {
+    font-size: 2.1em !important;
+  }
+
+  .header_container {
+    margin: 0 20px;
+  }
+
+  .sectionContainer {
+    margin: 40px 20px;
+  }
+
+  .sectionCard {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .sectionContainer {
+    margin: 20px 10px;
   }
 }
