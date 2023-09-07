@@ -15,7 +15,7 @@ After defining the process structure, it's time to map each component. The mappi
 
 Each existing participant needs to be associated with one user type.
 
-- **Step 1**: Click on a Participant. For this example, select the **Register** one.
+- **Step 1**: Click on a **Participant**. For this example, select the **Register** one.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-1.png"
@@ -29,7 +29,7 @@ Each existing participant needs to be associated with one user type.
   wSize="65%"
 />
 
-- **Step 3**: Choose the group or specific users to be mapped to the Participant. For this case, the Participant is mapped to _Type_ **Departament**, where we selected the **Training and Consult** **Departament**. Click **Apply Changes** to finish mapping.
+- **Step 3**: Choose the group or specific users to be mapped to the Participant. For this case, the Participant is mapped to Type **Department**, where we selected the **Product Development** **Department**. Click **Apply Changes** to finish mapping.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-participant-3.png"
@@ -37,7 +37,7 @@ Each existing participant needs to be associated with one user type.
 />
 
 :::info Restrict access by mapping Participants
-When you map a Participant to a user group, only they will have access to the actions related to that portion of the process. In the above example, only the Training and Consult department users would have access to the **Submit Request** form.
+When you map a Participant to a user group, only they will have access to the actions related to that portion of the process. In the above example, only the Product Development department users would have access to the **Submit Request** form.
 :::
 
 ## Mapping Activities to forms
@@ -46,16 +46,16 @@ Activities are related to actions users need to perform. Therefore, when you add
 
 ### Submit Request
 
-The form related to the travel request was created in the previous steps. Consequently, you only need to map the activity to the request, as described in the steps below.
+The form related to the travel request was created in the previous steps. Consequently, you only need to map the Activity to the request, as described in the steps below.
 
-- **Step 1**: Select the activity. For this example, select the **Submit Request**.
+- **Step 1**: Select the **Activity**. For this example, select the **Submit Request**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-1.png"
   wSize="65%"
 />
 
-- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**, and then select the **Travel Request Form**. Click **Apply Changes**.
+- **Step 2**: On the right panel, select **Mapping** and for **Type**, choose **Form**, and then select the **Travel Request Form**. Click **Apply Changes**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-2.png"
@@ -66,8 +66,8 @@ The form related to the travel request was created in the previous steps. Conseq
 
 The approval form was not created on the previous steps. We will create the approval form from the Process Builder page to show the flexibility provided by Joget. Follow the steps below to map the Approve Request activity to the new form.
 
-- **Step 1**: Select the activity **Approve Request** activity.
-- **Step 2**: On the right panel, select Mapping and for **Type**, choose **Form**. Instead of selecting a form, Click on **+** button to create the Travel Approval Form.
+- **Step 1**: Select the **Approve Request** **Activity**.
+- **Step 2**: On the right panel, select **Mapping** and for **Type**, choose **Form**. Instead of selecting a form, Click on **+** button to create the Travel Approval Form.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-1.png"
@@ -103,7 +103,7 @@ The approval form was not created on the previous steps. We will create the appr
   </tbody>
 </table>
 
-- **Step 4**: Select the **Travel Approval Form**. Then, to start building the form, click on **OPEN ITEN IN BUILDER**. You will be redirected to the Form Builder page.
+- **Step 4**: Select the **Travel Approval Form**. Then, to start building the form, click on **OPEN ITEM IN BUILDER**. You will be redirected to the Form Builder page.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-3.png"
@@ -117,7 +117,7 @@ The approval form was not created on the previous steps. We will create the appr
   wSize="65%"
 />
 
-- **Step 6**: Select the subform to configure it. Define its Label as **Request**, its ID as **request**, and choose **Travel Request Form** on the Form field. As a result, the subform will present the information provided when creating the request, enabling the decision maker to approve or deny the request. Click **Apply Change**.
+- **Step 6**: Select the subform to configure it. Define its **Label** as **Request**, its **ID** as **request**, and choose **Travel Request Form** on the **Form** field. As a result, the subform will present the information provided when creating the request, enabling the decision maker to approve or deny the request. Click **Apply Change**.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-activity-form-5.png"
@@ -164,7 +164,7 @@ Workflow variables are used to determine operations in the process. By associati
 
 Routes define the process flow when a process intersection exists. Routes determine the next step of a process based on workflow variables or other attributes. Follow the steps to configure the existing route in the Travel Request process.
 
-- **Step 1**: Select the route within the process. Then select **Mapping** on the right panel and for Plugin choose **Simple Rules**. Thus, we can define a rule to process the **status** workflow variable provided by the Approve Request.
+- **Step 1**: Select the **Route** within the process. Then select **Mapping** on the right panel and for **Plugin** choose **Simple Rules**. Thus, we can define a rule to process the **status** workflow variable provided by the Approve Request.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-route-1.png"
@@ -174,11 +174,11 @@ Routes define the process flow when a process intersection exists. Routes determ
 - **Step 2**: Define the rule to evaluate the workflow variable. Below you find all rule configurations and an image with the final configurations.
 
   - Click **+ Add Rule** to access the rule configuration.
-  - In the IF rule, click **+ Add Condition**.
+  - In the **IF** rule, click **+ Add Condition**.
   - Set the **Variable** field to **status** and set the **Value** field to **Approved**.
-  - In the THEN rule, click on **+ Add Action** and set **Type** to **Transition**.
+  - In the **THEN** rule, click on **+ Add Action** and set **Type** to **Transition**.
   - Set **Transition** to **transition5 (Send Approved Email)**, meaning that this transition will happen when **status** is **Approved**.
-  - In the ELSE THEN rule, set the **Type** to **Transition**.
+  - In the **ELSE THEN** rule, set the **Type** to **Transition**.
   - Set **Transition** to **transition6 (Send Rejected Email)**, meaning that this transition will happen when **status** is **Rejected**.
 
 <Images
@@ -192,7 +192,7 @@ Routes define the process flow when a process intersection exists. Routes determ
 
 Tools execute predefined actions automatically when a condition is triggered. In this case, tools automatically notify the requester about the travel approval or denials. To make the tool perform the action, we need to map it to a plugin, in this case, the **Email** plugin.
 
-- **Step 1**: Select the desired tool within the process.
+- **Step 1**: Select the desired **Tool** within the process.
 
 <Images
   imgURL="img/getting-started/create-an-app/design-a-process/configure-component-tool-1.png"
@@ -214,6 +214,6 @@ Each plugin will require different information to operate properly.
 
 ## Test the Process
 
-On the Process Builder page you can test the created process by running it. To run the process, use the **Run Process** button at the top right corner. When you run the
+On the Process Builder page you can test the created process by running it. To run the process, use the **Run Process** button at the top right corner.
 
 Congratulations, you have mapped all components within the process. Now, you can [integrate the process into the UI](./integrate-process-into-ui).

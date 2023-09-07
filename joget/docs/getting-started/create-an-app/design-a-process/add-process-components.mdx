@@ -15,7 +15,7 @@ The Travel Request process is composed of two **Participants**. One refers to al
 
 To create this process, you will follow the steps below. Be sure to have finished all previous steps before continuing.
 
-- **Step 1**: Add an **Activity** to the **Register** participant and connect the **Start** to it. Change the new activity label to **Submit Request**.
+- **Step 1**: Add an **Activity** to the **Register** participant and connect the **Start** component to it. Change the new activity label to **Submit Request**.
 
 <Images
   imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-1.png"
@@ -29,14 +29,14 @@ To create this process, you will follow the steps below. Be sure to have finishe
   wSize="75%"
 />
 
-- **Step 3**: Integrate a route to the **Approver** participant and connect the **Approve Request** to it. The route will evaluate if the request status is approved and define the next process step.
+- **Step 3**: Integrate a **Route** to the **Approver** participant and connect the **Approve Request** to it. The **Route** will evaluate if the request status is approved and define the next process step.
 
 <Images
   imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-3.png"
   wSize="75%"
 />
 
-- **Step 4**: Add two new tolls to the **Approver** participant and connect the route to them. Rename them as **Send Approved Email** and **Send Rejected Email**. Add and then connect each tool component to an end component.
+- **Step 4**: Add two new **Tolls** to the **Approver** participant and connect the **Route** to them. Rename them as **Send Approved Email** and **Send Rejected Email**. After, connect each **Tool** component to an **End** component.
 
 <Images
   imgURL="/img/getting-started/create-an-app/design-a-process/Add-components-4.png"
